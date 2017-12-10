@@ -151,3 +151,4 @@ layer = OFF;
 
 [OSCTIMER Assignments]
 layer = OFF;
+OSCTIMER = -, -, -, osc_sclk, 1024;
