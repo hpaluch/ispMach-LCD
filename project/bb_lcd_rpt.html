@@ -21,7 +21,7 @@ Tools->Fitter Report File Format...
 <BR>
 Project Name         :  bb_lcd
 Project Path         :  C:\projects\ispMach-LCD\project
-Project Fitted on    :  Sun Dec 10 13:36:22 2017
+Project Fitted on    :  Sun Dec 10 13:54:36 2017
 
 Device               :  M4256_96
 Package              :  144
@@ -38,7 +38,7 @@ Source Format        :  Pure_Verilog_HDL
 <A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
 <BR>
 Prefit Time                     0 secs
-Load Design Time                0.09 secs
+Load Design Time                0.08 secs
 Partition Time                  0.08 secs
 Place Time                      0.00 secs
 Route Time                      0.00 secs
@@ -538,36 +538,36 @@ lcdcom.AR = !<A href=#8>nrst</A> ; (1 pterm, 1 signal)
 
 <A name=21>lcdseg1_0_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A> & <A href=#11>led_4_.Q</A>
     # led_7_.Q & led_6_.Q & led_5_.Q & !led_4_.Q ; (2 pterms, 4 signals)
-lcdseg1_0_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_0_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=20>lcdseg1_1_.X1</A> = <A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A>
-    # <A href=#6>led_7_.Q</A> & led_5_.Q & <A href=#11>led_4_.Q</A>
-    # led_7_.Q & !led_5_.Q & !led_4_.Q
-    # led_7_.Q & led_6_.Q ; (4 pterms, 4 signals)
+<A name=20>lcdseg1_1_.X1</A> = !<A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A> & !<A href=#11>led_4_.Q</A>
+    # !<A href=#6>led_7_.Q</A> & !led_6_.Q
+    # !led_7_.Q & !led_5_.Q
+    # !led_6_.Q & !led_5_.Q & led_4_.Q ; (4 pterms, 4 signals)
 lcdseg1_1_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=19>lcdseg1_2_.X1</A> = !<A href=#36>N_34_i</A>
     # <A href=#9>led_6_.Q</A> & !<A href=#10>led_5_.Q</A> & <A href=#11>led_4_.Q</A> ; (2 pterms, 4 signals)
-lcdseg1_2_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_2_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=18>lcdseg1_3_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A> & <A href=#11>led_4_.Q</A>
     # led_7_.Q & led_6_.Q & led_5_.Q & !led_4_.Q
     # led_7_.Q & !led_6_.Q & !led_5_.Q & !led_4_.Q ; (3 pterms, 4 signals)
-lcdseg1_3_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_3_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=17>lcdseg1_4_.X1</A> = !<A href=#11>led_4_.Q</A> & <A href=#36>N_34_i</A>
     # !<A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A> & N_34_i ; (2 pterms, 4 signals)
-lcdseg1_4_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_4_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=16>lcdseg1_5_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#10>led_5_.Q</A> & !<A href=#11>led_4_.Q</A>
     # led_7_.Q & <A href=#9>led_6_.Q</A> & !led_4_.Q
     # led_7_.Q & led_6_.Q & !led_5_.Q ; (3 pterms, 4 signals)
-lcdseg1_5_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_5_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=7>lcdseg1_6_.X1</A> = !<A href=#36>N_34_i</A>
     # <A href=#6>led_7_.Q</A> & <A href=#9>led_6_.Q</A> & <A href=#10>led_5_.Q</A>
     # !led_6_.Q & !led_5_.Q & !<A href=#11>led_4_.Q</A> ; (3 pterms, 5 signals)
-lcdseg1_6_.X2 = <A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_6_.X2 = !<A href=#22>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
 <A name=15>led_0_</A> = <A href=#8>nrst</A> ; (1 pterm, 1 signal)
 

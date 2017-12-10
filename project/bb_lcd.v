@@ -10,7 +10,6 @@ module bb_lcd (led,lcdcom,lcdseg1,nrst);
   // clocks taken from Pico Dev board source (see i2c_peri_demo_revC1.v)
   wire osc_clk;  // clock 5MHz
   wire osc_sclk; // "slow clock" 5kHz
-  reg [11:0] slow_clk; 
 
   assign rst = ~nrst; // positive RESET (active on logical 1)
 
@@ -21,6 +20,7 @@ module bb_lcd (led,lcdcom,lcdseg1,nrst);
   defparam I1.TIMER_DIV = "1024";
   OSCTIMER I1 (.DYNOSCDIS(1'b0), .TIMERRES(1'b0), .OSCOUT(osc_clk), .TIMEROUT(osc_sclk));
 
+  reg [11:0] slow_clk; 
   // taken from Pico Dev board source (see i2c_peri_demo_revC1.v)
   always @(posedge osc_sclk or posedge rst)
 	if (rst)
@@ -44,7 +44,7 @@ module bb_lcd (led,lcdcom,lcdseg1,nrst);
   wire [6:0] seg1; // output for 1st 7-segment digit - without clock!!!
   BB_BCD_TO_SEG7 dec1( .segout( seg1 ), .bcdin( cnta ) );
   // must be AC signal - xored with neg lcdcom
-  assign lcdseg1 = seg1 ^~ { 7{ lcdcom } }; 
+  assign lcdseg1 = seg1 ^ { 7{ lcdcom } }; 
 
 endmodule
 
