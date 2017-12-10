@@ -42,5 +42,14 @@ bb_lcd.xrf
 lattice_cmd.rs2
 run_options.txt
 scratchproject.prs
+*.err
+bb_lcd.eq3
+bb_lcd.fti
+bb_lcd.lco
+bb_lcd.ppn
+bb_lcd.rpt
+bb_lcd.svl
+bb_lcd.tda
+bb_lcd.tt4
 
 
