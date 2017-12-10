@@ -27,6 +27,7 @@ recommend to follow my Wiki articles:
 # Software Requirements
 
 Mandatory:
+* Windows OS, tested Windows 7, 64-bit, under Oracle VirtualBox
 * Working installation of [ispLEVER Classic 2.0 Base Module] to
   synthetize (build) this project
 * Working installation of ispVM to program your
@@ -34,10 +35,28 @@ Mandatory:
  
 
 Optional:
+* [Git for Windows] to checkout this project 
 * ExpressSCH to read `*.sch` schematic files - part
   of [ExpressPCB][] package, tested version 6.1.4 2008 
 
 # Building project
+
+Create directory for projects:
+
+```cmd
+md c:\projects
+```
+
+For Git checkout run _Git Bash_ and then:
+```shell
+cd /c/projects
+git clone https://github.com/hpaluch/ispMach-LCD.git
+```
+
+Then in Explorer:
+* Double-click on `c:\projects\ispMach-LCD\project\bb_lcd.syn` to open
+  this project in ispLever
+* TODO:  
 
 
 
@@ -60,4 +79,7 @@ Optional:
    "ispLEVER Classic 2.0 Base Module"
    
 [ExpressPCB]: https://www.expresspcb.com/expresspcb/
-   "ExpressPCB"   
+   "ExpressPCB"
+   
+[Git for Windows]: https://git-scm.com/download/win
+   "Git for Windows"      

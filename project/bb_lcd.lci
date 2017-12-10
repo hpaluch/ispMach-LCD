@@ -7,11 +7,13 @@ PartType = LC4256ZE;
 Speed = -5.8;
 Operating_condition = COM;
 Status = Production;
+EN_PinGLB = yes;
+EN_PinMacrocell = yes;
 
 [Revision]
 Parent = lc4k256e.lci;
-DATE = 2002;
-TIME = 0:00:00;
+DATE = 12/10/2017;
+TIME = 10:38:42;
 Source_Format = Pure_Verilog_HDL;
 Synthesis = Synplify;
 
@@ -25,6 +27,7 @@ Synthesis = Synplify;
 
 [Location Assignments]
 layer = OFF;
+nrst = Pin, 72, -, -, -;
 
 [Group Assignments]
 layer = OFF;
@@ -57,6 +60,7 @@ layer = OFF;
 [Region]
 
 [Timing Constraints]
+layer = OFF;
 
 [HSI Attributes]
 
@@ -105,3 +109,27 @@ layer = OFF;
 [verilog synplify constraints list]
 
 [verilog spectrum constraints list]
+
+[Power Guard]
+
+[ORP Bypass]
+
+[Register Powerup]
+
+[Constraint Version]
+version = 1.0;
+
+[ORP ASSIGNMENTS]
+layer = OFF;
+
+[Node attribute]
+layer = OFF;
+
+[SYMBOL/MODULE attribute]
+layer = OFF;
+
+[Nodal Constraints]
+layer = OFF;
+
+[OSCTIMER Assignments]
+layer = OFF;
