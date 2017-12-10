@@ -38,6 +38,7 @@ module bb_lcd (led,nrst);
 
 endmodule
 
+// BB_DEC_CNT - simple decimal (0-9) counter
 module BB_DEC_CNT(dout, clk, rst);
  output [3:0] dout; // output, binary counter data: 0 to 9
  input  clk;       // clock to increment counter
@@ -58,3 +59,42 @@ module BB_DEC_CNT(dout, clk, rst);
    end
  end
 endmodule
+
+// BB_BC_TO_SEG7 -  decored from 4-bit BCD number (0-9) to 7-bits 7segment digit
+// Digits in segout[6:0]:
+//             bit 0
+//           ---------
+//          |         |
+//    bit 5 |         | bit 1
+//          |  bit 6  |
+//           ---------
+//          |         |
+//    bit 4 |         | bit 2
+//          |  bit 3  |
+//           ---------
+//
+
+module BB_BCD_TO_SEG7(segout,bcdin);
+ output [6:0] segout;
+ input  [3:0] bcdin;
+
+ reg [6:0] segout;
+
+ always @( bcdin )
+ begin
+  case ( bcdin )
+    4'b0000: segout = 7'b0111111; // 0
+    4'b0001: segout = 7'b0000110; // 1
+    4'b0010: segout = 7'b1011011; // 2
+    4'b0011: segout = 7'b1001111; // 3
+    4'b0100: segout = 7'b1100110; // 4
+    4'b0101: segout = 7'b1101101; // 5
+    4'b0110: segout = 7'b1111101; // 6
+    4'b0111: segout = 7'b0000111; // 7
+    4'b1000: segout = 7'b1111111; // 8
+    4'b1001: segout = 7'b1101111; // 9
+    default: segout = 7'b0111001; // E (as error)
+  endcase
+ end
+endmodule
+
