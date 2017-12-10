@@ -4,7 +4,7 @@ Here is an example how to connect dumb LCD display (without microcontroller)
 to [ispMACH 4256ZE Breakout Board][]
 
 > NOTE: If you have [ispMACH 4000ZE Pico Development Kit][] then you don't need this
-> proejct - there is already connected LCD with working example.
+> project - there is already connected LCD with working example.
 
 If you never worked with [ispMACH 4256ZE Breakout Board][] I strongly
 recommend to follow my Wiki articles:
@@ -28,8 +28,9 @@ recommend to follow my Wiki articles:
 Mandatory:
 * Working installation of [ispLEVER Classic 2.0 Base Module] to
   synthetize (build) this project
-* Working installation of ispVM - [ispVM System 17.9 for Windows][] tested (even under VirtualBox)
-  to program your CPLD
+* Working installation of ispVM to program your
+  CPLD - [ispVM System 17.9 for Windows][] tested (even under VirtualBox)
+ 
 
 Optional:
 * ExpressSCH to read `*.sch` schematic files - part
