@@ -14,6 +14,9 @@ recommend to follow my Wiki articles:
 
 > PROJECT STATUS:
 >
+> Reached [m3-1dg-counter](https://github.com/hpaluch/ispMach-LCD/releases/tag/m3-1dg-counter):
+> * first working version - single digit on LCD
+>
 > Reached [m2-dec-counter](https://github.com/hpaluch/ispMach-LCD/releases/tag/m2-dec-counter):
 > * imported clock base from Pico Dev Board
 > * decimal counter module
