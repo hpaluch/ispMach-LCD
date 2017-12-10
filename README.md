@@ -21,7 +21,8 @@ recommend to follow my Wiki articles:
 * Having working [ispMACH 4256ZE Breakout Board]
 * Added Power-Up RESET connected to PIN 72
   as described on [Adding RESET button to ispMACH 4256ZE Breakout Board][] 
-* Having dumb LCD display to connect to Breakout Board
+* Having dumb LCD display to connect to Breakout Board 
+  TODO: schematic pending 
 
 # Software Requirements
 

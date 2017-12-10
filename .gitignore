@@ -1,0 +1,13 @@
+*.log
+*~
+*.swp
+work
+*.bit
+*.ini
+*.h
+*.jhd
+*.jid
+*.lct
+*.naf
+*.sty
+*.tcl
