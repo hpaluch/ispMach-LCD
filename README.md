@@ -3,6 +3,13 @@
 Here is an example how to connect dumb LCD display (without microcontroller)
 to [ispMACH 4256ZE Breakout Board][]
 
+![ispMach with LCD](https://github.com/hpaluch/ispMach-LCD/blob/master/images/ispmach-bb-w-lcd.jpg?raw=true)
+
+> NOTES:
+>
+> * I have too short wires, oops :-)
+> * Last digit show random pattern (all unused segments should be "grounded" to lcdcom PIN 40 on display)
+
 > NOTE: If you have [ispMACH 4000ZE Pico Development Kit][] then you don't need this
 > project - there is already connected LCD with working example.
 
