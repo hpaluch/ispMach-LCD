@@ -14,6 +14,11 @@ recommend to follow my Wiki articles:
 
 > PROJECT STATUS:
 >
+> Reached [m2-dec-counter](https://github.com/hpaluch/ispMach-LCD/releases/tag/m2-dec-counter):
+> * imported clock base from Pico Dev Board
+> * decimal counter module
+> * debug counter output to LED D5-D8
+>
 > Reached [m1-reset-leds](https://github.com/hpaluch/ispMach-LCD/releases/tag/m1-reset-leds):
 > * working RESET input and LED D1 & D2
 > * assigned all onboard LEDs D1 - D8 to pins
