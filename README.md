@@ -59,8 +59,19 @@ git clone https://github.com/hpaluch/ispMach-LCD.git
 Then in Explorer:
 * Double-click on `c:\projects\ispMach-LCD\project\bb_lcd.syn` to open
   this project in ispLever
-* TODO:  
+* Double-click _Fit Design_ in process Window
+* target `bb_lcd.jed` should be rebuild
 
+# Programming project
+
+> WARNING!
+>
+> _ispVM 17.9_ uses absolute path inside of `bb_prog.xcf` so
+> this file would work only if specified in the path bellow!
+
+* Double-click on provided
+  file `c:\projects\ispMach-LCD\project\bb_prog.xcf` to open _ispVM_
+* issue `Ctrl`+`G` to reprogramm your device.   
 
 
 [ispMACH 4256ZE Breakout Board]: http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/ispMACH4256ZEBreakoutBoard.aspx
