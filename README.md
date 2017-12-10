@@ -14,7 +14,10 @@ recommend to follow my Wiki articles:
 
 > PROJECT STATUS:
 >
-> No project files yet.
+> * working RESET input and LED D1 & D2
+> * assigned all onboard LEDs D1 - D8 to pins
+
+Current project report available at: https://hpaluch.github.io/ispMach-LCD/
 
 # Hardware Requirements
 
