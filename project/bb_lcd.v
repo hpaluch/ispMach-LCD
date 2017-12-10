@@ -1,7 +1,10 @@
 // ispMACH 4256ZE Breakout Board (BB) with dumb LCD
-// Status: only RESET LEDs implemented
-module bb_lcd (led,nrst);
+// Status: beta
+module bb_lcd (led,lcdcom,lcdseg1,nrst);
   output [7:0] led;
+  output lcdcom; // common LCD electrode for AC signal
+  output [6:0] lcdseg1; // LCD 1st 7-segment digit, must be AC signal (inverted lcdcom for active!)
+
   input nrst;
 
   // clocks taken from Pico Dev board source (see i2c_peri_demo_revC1.v)
@@ -28,6 +31,8 @@ module bb_lcd (led,nrst);
   assign display_clk = slow_clk[5]; // 5000 / 2^5 = 5000 / 32 ~= 156 Hz for LCD display
   assign op_clk = slow_clk[11];	    // 5000 / 2^11 = 5000 / 2048 ~= 2.5 Hz for counting digits
 
+  assign lcdcom = display_clk; // ~100Hz AC signal for common electrode of LCD display
+
   assign led[3] = ~op_clk; // positive op_clk
   assign led[2] = op_clk;  // negative op_clk
 
@@ -35,6 +40,11 @@ module bb_lcd (led,nrst);
   wire [3:0] cnta;
   BB_DEC_CNT cnt10a( .dout( cnta ), .clk( op_clk ), .rst ( rst ) );
   assign led[7:4] = ~cnta;
+
+  wire [6:0] seg1; // output for 1st 7-segment digit - without clock!!!
+  BB_BCD_TO_SEG7 dec1( .segout( seg1 ), .bcdin( cnta ) );
+  // must be AC signal - xored with neg lcdcom
+  assign lcdseg1 = seg1 ^~ { 7{ lcdcom } }; 
 
 endmodule
 

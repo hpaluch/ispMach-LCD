@@ -1,21 +1,21 @@
  ispLEVER Classic 2.0.00.17.20.15 Fitter Report File 
 Project Name,bb_lcd
 Project Path,C:\projects\ispMach-LCD\project
-Project Fitted on,Sun Dec 10 13:09:26 2017
+Project Fitted on,Sun Dec 10 13:36:22 2017
 
 Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name,PG
 1,GND,-,,,,,,
 2,TDI,-,,,,,,
 3,VCCIO0,-,,,,,,
-4,I_O,0,C12,,,,,
-5,I_O,0,C10,,,,,
-6,I_O,0,C8,,,,,
-7,I_O,0,C6,,,,,
-8,I_O,0,C4,,,,,
-9,I_O,0,C2,,,,,
+4,I_O,0,C12,*,LVCMOS18,Output,lcdcom,
+5,I_O,0,C10,*,LVCMOS18,Output,lcdseg1_0_,
+6,I_O,0,C8,*,LVCMOS18,Output,lcdseg1_1_,
+7,I_O,0,C6,*,LVCMOS18,Output,lcdseg1_2_,
+8,I_O,0,C4,*,LVCMOS18,Output,lcdseg1_3_,
+9,I_O,0,C2,*,LVCMOS18,Output,lcdseg1_4_,
 10,GNDIO0,-,,,,,,
-11,I_O,0,D14,,,,,
-12,I_O,0,D12,,,,,
+11,I_O,0,D14,*,LVCMOS18,Output,lcdseg1_5_,
+12,I_O,0,D12,*,LVCMOS18,Output,lcdseg1_6_,
 13,I_O,0,D10,,,,,
 14,I_O,0,D8,,,,,
 15,I_O,0,D6,,,,,
