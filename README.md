@@ -14,8 +14,10 @@ recommend to follow my Wiki articles:
 
 > PROJECT STATUS:
 >
+> Reached [m1-reset-leds](releases/tag/m1-reset-leds):
 > * working RESET input and LED D1 & D2
 > * assigned all onboard LEDs D1 - D8 to pins
+
 
 Current project report available at: https://hpaluch.github.io/ispMach-LCD/
 
