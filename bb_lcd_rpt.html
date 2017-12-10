@@ -21,7 +21,7 @@ Tools->Fitter Report File Format...
 <BR>
 Project Name         :  bb_lcd
 Project Path         :  C:\projects\ispMach-LCD\project
-Project Fitted on    :  Sun Dec 10 10:55:21 2017
+Project Fitted on    :  Sun Dec 10 12:36:23 2017
 
 Device               :  M4256_96
 Package              :  144
@@ -38,8 +38,8 @@ Source Format        :  Pure_Verilog_HDL
 <A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
 <BR>
 Prefit Time                     0 secs
-Load Design Time                0.06 secs
-Partition Time                  0.00 secs
+Load Design Time                0.05 secs
+Partition Time                  0.06 secs
 Place Time                      0.00 secs
 Route Time                      0.00 secs
 Total Fit Time                  00:00:01
@@ -48,25 +48,25 @@ Total Fit Time                  00:00:01
 <A name="Design_Summary"></A><FONT COLOR=maroon><U><B><big>Design_Summary</big></B></U></FONT>
 <BR>
 Total Input Pins                1
-Total Logic Functions           8
+Total Logic Functions           24
   Total Output Pins             8
   Total Bidir I/O Pins          0
-  Total Buried Nodes            0
-Total Flip-Flops                0
-  Total D Flip-Flops            0
-  Total T Flip-Flops            0
+  Total Buried Nodes            16
+Total Flip-Flops                17
+  Total D Flip-Flops            9
+  Total T Flip-Flops            8
   Total Latches                 0
-Total Product Terms             8
+Total Product Terms             68
 
 Total Reserved Pins             0
 Total Locked Pins               9
-Total Locked Nodes              0
+Total Locked Nodes              2
 
 Total Unique Output Enables     0
-Total Unique Clocks             0
+Total Unique Clocks             2
 Total Unique Clock Enables      0
-Total Unique Resets             0
-Total Unique Presets            0
+Total Unique Resets             1
+Total Unique Presets            1
 
 Fmax Logic Levels               -
 
@@ -81,29 +81,29 @@ Fmax Logic Levels               -
   Input-Only Pins                  10        1      9    -->    10
   I/O / Enable Pins                 2        0      2    -->     0
 I/O Pins                           94        8     86    -->     8
-Logic Functions                   256        8    248    -->     3
+Logic Functions                   256       23    233    -->     8
   Input Registers                  96        0     96    -->     0
 
-GLB Inputs                        576        1    575    -->     0
-Logical Product Terms            1280        8   1272    -->     0
-Occupied GLBs                      16        2     14    -->    12
-Macrocells                        256        8    248    -->     3
+GLB Inputs                        576       30    546    -->     5
+Logical Product Terms            1280       38   1242    -->     2
+Occupied GLBs                      16        5     11    -->    31
+Macrocells                        256       22    234    -->     8
 
 Control Product Terms:
-  GLB Clock/Clock Enables          16        0     16    -->     0
+  GLB Clock/Clock Enables          16        3     13    -->    18
   GLB Reset/Presets                16        0     16    -->     0
-  Macrocell Clocks                256        0    256    -->     0
+  Macrocell Clocks                256        4    252    -->     1
   Macrocell Clock Enables         256        0    256    -->     0
   Macrocell Enables               256        0    256    -->     0
   Macrocell Resets                256        0    256    -->     0
   Macrocell Presets               256        0    256    -->     0
 
-Global Routing Pool               356        1    355    -->     0
+Global Routing Pool               356       18    338    -->     5
   GRP from IFB                     ..        0     ..    -->    ..
     (from input signals)           ..        0     ..    -->    ..
     (from output signals)          ..        0     ..    -->    ..
     (from bidir signals)           ..        0     ..    -->    ..
-  GRP from MFB                     ..        1     ..    -->    ..
+  GRP from MFB                     ..       18     ..    -->    ..
 ----------------------------------------------------------------------
 
 &lt;Note&gt; 1 : The available PT is the product term that has not been used.
@@ -120,18 +120,18 @@ Global Routing Pool               356        1    355    -->     0
 Maximum
   GLB                      36      *(1)     8   --     --             16       80       16
 </B>-------------------------------------------------------------------------------------------
-  GLB    A      0     0     0      0/6      0    0      0             16        0        0
+  GLB    A      1     4     5      0/6      0    3      0             13        6        3
   GLB    B      0     0     0      0/6      0    0      0             16        0        0
-  GLB    C      0     0     0      0/6      0    0      0             16        0        0
+  GLB    C      0     0     0      0/6      0    1      0             15        0        1
   GLB    D      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
   GLB    E      0     0     0      0/6      0    0      0             16        0        0
-  GLB    F      0     0     0      0/6      0    0      0             16        0        0
+  GLB    F      0     0     0      0/6      0    1      0             15        0        1
   GLB    G      0     0     0      0/6      0    0      0             16        0        0
   GLB    H      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
-  GLB    I      0     0     0      6/6      0    6      0             10        6        6
-  GLB    J      0     1     1      2/6      0    2      0             14        2        2
+  GLB    I      0    18    18      6/6      0   12      0              4       23       12
+  GLB    J      0     7     7      2/6      0    5      0             11        9        5
   GLB    K      0     0     0      0/6      0    0      0             16        0        0
   GLB    L      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ Maximum
   GLB    O      0     0     0      0/6      0    0      0             16        0        0
   GLB    P      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
-TOTALS:         0     1     1      8/96     0    8      0            248        8        8
+TOTALS:         1    29    30      8/96     0   22      0            234       38       22
 
 &lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
 &lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
@@ -154,7 +154,7 @@ TOTALS:         0     1     1      8/96     0    8      0            248        
 Maximum
   GLB        1      1        16     16     16     16     16  
 ==============================================================================
-</B>  GLB    A   0      0         0      0      0      0      0
+</B>  GLB    A   1      0         0      0      0      0      0
   GLB    B   0      0         0      0      0      0      0
   GLB    C   0      0         0      0      0      0      0
   GLB    D   0      0         0      0      0      0      0
@@ -164,8 +164,8 @@ Maximum
   GLB    G   0      0         0      0      0      0      0
   GLB    H   0      0         0      0      0      0      0
 ------------------------------------------------------------------------------
-  GLB    I   0      0         0      0      0      0      0
-  GLB    J   0      0         0      0      0      0      0
+  GLB    I   1      0         4      0      0      0      0
+  GLB    J   1      0         0      0      0      0      0
   GLB    K   0      0         0      0      0      0      0
   GLB    L   0      0         0      0      0      0      0
 ------------------------------------------------------------------------------
@@ -240,11 +240,25 @@ Device Options:
            Bidir and Buried Signal Lists.
 
 
+<A name="OSCTIMER_Summary"></A><FONT COLOR=maroon><U><B><big>OSCTIMER_Summary</big></B></U></FONT>
+<BR>
+OSCTIMER:                         Pin/Node
+  OSCTIMER Instance Name                    I1
+  Dynamic Disable Signal                    gnd_n_n
+  Timer Reset Signal                        _dup_gnd_n_n
+  Oscillator Output Clock         mfb C-15  A0_OSCOUT
+  Timer Output Clock              mfb F-15  osc_sclk
+
+  Oscillator Output Clock Frequency         5.0000 MHz
+  Timer Output Clock Frequency              4.8828 KHz
+  Timer Divider                             1024
+
+
 <A name="Pinout_Listing"></A><FONT COLOR=maroon><U><B><big>Pinout_Listing</big></B></U></FONT>
 <BR>
 <B>      | Pin   | Bank |GLB |Assigned|                 | Signal|            | PG
 Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enable
-</B>----------------------------------------------------------------------------------
+</B>--------------------------------------------------------------------------------------
 1     | GND   |   -  |    |        |                 |       |            |
 2     | TDI   |   -  |    |        |                 |       |            |
 3     |VCCIO0 |   -  |    |        |                 |       |            |
@@ -389,7 +403,7 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 142   |  I_O  |   0  |B10 |        |                 |       |            |
 143   |  I_O  |   0  |B12 |        |                 |       |            |
 144   | IN9   |   0  |    |        |                 |       |            |
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 &lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
 &lt;Note&gt; Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
@@ -420,12 +434,12 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 </B>-------------------------------------------------------------------------------
   71   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#14>led_0_</A>
   70   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#13>led_1_</A>
-  63   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#12>led_2_</A>
-  62   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#11>led_3_</A>
-  61   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#10>led_4_</A>
-  60   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#9>led_5_</A>
-  59   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#8>led_6_</A>
-  58   I  0  -   1  1 COM                   ----------------  Fast    Off <A href=#6>led_7_</A>
+  63   I 13  -   1  1 TFF    * R            ----------------  Fast    Off <A href=#12>led_2_</A>
+  62   I  1  -   1  1 COM                   ----------------  Fast    Off <A href=#11>led_3_</A>
+  61   I  3  -   2  1 DFF  *   S         1  --------I-------  Fast    Off <A href=#10>led_4_</A>
+  60   I  6  -   4  1 DFF  *   S         1  --------I-------  Fast    Off <A href=#9>led_5_</A>
+  59   I  5  -   4  1 DFF  *   S         1  --------I-------  Fast    Off <A href=#8>led_6_</A>
+  58   I  6  -   5  1 DFF  *   S         1  --------I-------  Fast    Off <A href=#6>led_7_</A>
 -------------------------------------------------------------------------------
 
 &lt;Note&gt; CLS = Number of clusters used
@@ -464,25 +478,148 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 
 <A name="Buried_Signal_List"></A><FONT COLOR=maroon><U><B><big>Buried_Signal_List</big></B></U></FONT>
 <BR>
+<B>        I         C      P R P       Node
+        N         L Mc   R E U C I F Fanout
+Mc GLB  P LL PTs  S Type E S P E R P                     Signal
+</B>------------------------------------------------------------------------
+15   F  0  -   0  1 COM              3  A-------IJ------  <A href=#30>_dup_gnd_n_n</A>
+15   C  0  -   0  1 COM                 ----------------  <A href=#15>gnd_n_n</A>
+15   F  0  -   0  0 COM              3  A-------IJ------  <A href=#16>osc_sclk</A>
+10   A  3  -   1  1 DFF    * R       3  A-------IJ------  <A href=#17>slow_clk_0_</A>
+10   I 12  -   1  1 TFF    * R       1  --------I-------  <A href=#27>slow_clk_10_</A>
+12   I 13  -   1  1 TFF    * R       1  --------I-------  <A href=#28>slow_clk_11_reg</A>
+ 5   A  4  -   2  1 DFF    * R       3  A-------IJ------  <A href=#18>slow_clk_1_</A>
+ 2   A  5  -   3  1 DFF    * R       3  A-------IJ------  <A href=#19>slow_clk_2_</A>
+ 5   J  6  -   4  1 DFF    * R       2  --------IJ------  <A href=#20>slow_clk_3_</A>
+ 7   J  7  -   2  1 DFF    * R       2  --------IJ------  <A href=#21>slow_clk_4_</A>
+11   J  7  -   1  1 TFF    * R       1  --------I-------  <A href=#22>slow_clk_5_</A>
+ 3   I  8  -   1  1 TFF    * R       1  --------I-------  <A href=#23>slow_clk_6_</A>
+ 5   I  9  -   1  1 TFF    * R       1  --------I-------  <A href=#24>slow_clk_7_</A>
+ 7   I 10  -   1  1 TFF    * R       1  --------I-------  <A href=#25>slow_clk_8_</A>
+ 9   I 11  -   1  1 TFF    * R       1  --------I-------  <A href=#26>slow_clk_9_</A>
+------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        IR = Input register
+        FP = Fast path used
+       OBP = ORP bypass used
 
 
 <A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
 <BR>
+
+<A name=30>_dup_gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
+
+<A name=15>gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
+
 <A name=14>led_0_</A> = <A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
 <A name=13>led_1_</A> = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=12>led_2_</A> = 1 ; (1 pterm, 0 signal)
+<A name=12>led_2_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A> & <A href=#24>slow_clk_7_.Q</A>
+       & <A href=#25>slow_clk_8_.Q</A> & <A href=#26>slow_clk_9_.Q</A> & <A href=#27>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
+led_2_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+led_2_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=11>led_3_</A> = 1 ; (1 pterm, 0 signal)
+<A name=11>led_3_</A> = !<A href=#28>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
 
-<A name=10>led_4_</A> = 1 ; (1 pterm, 0 signal)
+<A name=10>led_4_.D</A> = !<A href=#10>led_4_.Q</A> ; (1 pterm, 1 signal)
+led_4_.C = <A href=#28>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_4_.AP = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=9>led_5_</A> = 1 ; (1 pterm, 0 signal)
+<A name=9>led_5_.D</A> = !<A href=#6>led_7_.Q</A> & <A href=#8>led_6_.Q</A> & <A href=#9>led_5_.Q</A>
+    # !led_5_.Q & !<A href=#10>led_4_.Q</A>
+    # led_5_.Q & led_4_.Q ; (3 pterms, 4 signals)
+led_5_.C = <A href=#28>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_5_.AP = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=8>led_6_</A> = 1 ; (1 pterm, 0 signal)
+<A name=8>led_6_.D</A> = !<A href=#8>led_6_.Q</A> & !<A href=#9>led_5_.Q</A> & !<A href=#10>led_4_.Q</A>
+    # led_6_.Q & led_5_.Q
+    # led_6_.Q & led_4_.Q ; (3 pterms, 3 signals)
+led_6_.C = <A href=#28>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_6_.AP = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=6>led_7_</A> = 1 ; (1 pterm, 0 signal)
+<A name=6>led_7_.D</A> = !( <A href=#6>led_7_.Q</A> & !<A href=#8>led_6_.Q</A> & !<A href=#9>led_5_.Q</A> & !<A href=#10>led_4_.Q</A>
+    # !led_7_.Q & led_6_.Q & !led_5_.Q
+    # !led_7_.Q & !led_6_.Q & led_5_.Q
+    # !led_7_.Q & led_4_.Q ) ; (4 pterms, 4 signals)
+led_7_.C = <A href=#28>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_7_.AP = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=17>slow_clk_0_.D</A> = !<A href=#17>slow_clk_0_.Q</A> ; (1 pterm, 1 signal)
+slow_clk_0_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_0_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=27>slow_clk_10_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A> & <A href=#24>slow_clk_7_.Q</A>
+       & <A href=#25>slow_clk_8_.Q</A> & <A href=#26>slow_clk_9_.Q</A> ; (1 pterm, 10 signals)
+slow_clk_10_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_10_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=28>slow_clk_11_reg.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A>
+       & <A href=#20>slow_clk_3_.Q</A> & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A>
+       & <A href=#24>slow_clk_7_.Q</A> & <A href=#25>slow_clk_8_.Q</A> & <A href=#26>slow_clk_9_.Q</A> & <A href=#27>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
+slow_clk_11_reg.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_11_reg.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=18>slow_clk_1_.D</A> = <A href=#17>slow_clk_0_.Q</A> & !<A href=#18>slow_clk_1_.Q</A>
+    # !slow_clk_0_.Q & slow_clk_1_.Q ; (2 pterms, 2 signals)
+slow_clk_1_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_1_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=19>slow_clk_2_.D</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & !<A href=#19>slow_clk_2_.Q</A>
+    # !slow_clk_1_.Q & slow_clk_2_.Q
+    # !slow_clk_0_.Q & slow_clk_2_.Q ; (3 pterms, 3 signals)
+slow_clk_2_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_2_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=20>slow_clk_3_.D</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & !<A href=#20>slow_clk_3_.Q</A>
+    # !slow_clk_2_.Q & slow_clk_3_.Q
+    # !slow_clk_1_.Q & slow_clk_3_.Q
+    # !slow_clk_0_.Q & slow_clk_3_.Q ; (4 pterms, 4 signals)
+slow_clk_3_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_3_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=21>slow_clk_4_.D.X1</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A>
+       & <A href=#20>slow_clk_3_.Q</A> ; (1 pterm, 4 signals)
+slow_clk_4_.D.X2 = <A href=#21>slow_clk_4_.Q</A> ; (1 pterm, 1 signal)
+slow_clk_4_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_4_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=22>slow_clk_5_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> ; (1 pterm, 5 signals)
+slow_clk_5_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_5_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=23>slow_clk_6_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> ; (1 pterm, 6 signals)
+slow_clk_6_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_6_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=24>slow_clk_7_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A> ; (1 pterm, 7 signals)
+slow_clk_7_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_7_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=25>slow_clk_8_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A> & <A href=#24>slow_clk_7_.Q</A> ; (1 pterm, 8 signals)
+slow_clk_8_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_8_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=26>slow_clk_9_.T</A> = <A href=#17>slow_clk_0_.Q</A> & <A href=#18>slow_clk_1_.Q</A> & <A href=#19>slow_clk_2_.Q</A> & <A href=#20>slow_clk_3_.Q</A>
+       & <A href=#21>slow_clk_4_.Q</A> & <A href=#22>slow_clk_5_.Q</A> & <A href=#23>slow_clk_6_.Q</A> & <A href=#24>slow_clk_7_.Q</A>
+       & <A href=#25>slow_clk_8_.Q</A> ; (1 pterm, 9 signals)
+slow_clk_9_.C = <A href=#16>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_9_.AR = !<A href=#7>nrst</A> ; (1 pterm, 1 signal)
 
 <BR>
 <BR>
