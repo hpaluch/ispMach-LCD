@@ -43,7 +43,7 @@ module bb_lcd (led,lcdcom,lcdseg1,nrst);
 
   wire [6:0] seg1; // output for 1st 7-segment digit - without clock!!!
   BB_BCD_TO_SEG7 dec1( .segout( seg1 ), .bcdin( cnta ) );
-  // must be AC signal - xored with neg lcdcom
+  // must be AC signal - each bit xored with lcdcom
   assign lcdseg1 = seg1 ^ { 7{ lcdcom } }; 
 
 endmodule
