@@ -14,7 +14,6 @@ module bb_lcd (led,nrst);
   // remember: LED's are inverted (on when output is logical 0)
   assign led[0] = nrst;  // PIN 71, LED D1, ON when RESET 
   assign led[1] = ~nrst; // PIN 70, LED D2, ON when Not RESET
-  assign led[7:4] = 4'b1111; // LED D5-D8, OFF
 
   defparam I1.TIMER_DIV = "1024";
   OSCTIMER I1 (.DYNOSCDIS(1'b0), .TIMERRES(1'b0), .OSCOUT(osc_clk), .TIMEROUT(osc_sclk));
@@ -32,5 +31,30 @@ module bb_lcd (led,nrst);
   assign led[3] = ~op_clk; // positive op_clk
   assign led[2] = op_clk;  // negative op_clk
 
+  // counter for the 1st digit
+  wire [3:0] cnta;
+  BB_DEC_CNT cnt10a( .dout( cnta ), .clk( op_clk ), .rst ( rst ) );
+  assign led[7:4] = ~cnta;
 
+endmodule
+
+module BB_DEC_CNT(dout, clk, rst);
+ output [3:0] dout; // output, binary counter data: 0 to 9
+ input  clk;       // clock to increment counter
+ input  rst;       // asynchronous reset to 0
+
+ reg [3:0] dout; // data output is register variable
+
+ always @(posedge clk or posedge rst)
+ begin
+   if ( rst ) 
+     dout <= 4'd0;
+   else
+   begin
+     if ( dout == 9 )
+       dout <= 4'd0;
+     else
+       dout <= dout + 1;
+   end
+ end
 endmodule
