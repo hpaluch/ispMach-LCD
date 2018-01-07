@@ -45,8 +45,9 @@ Current project report available at: https://hpaluch.github.io/ispMach-LCD/
 * Having working [ispMACH 4256ZE Breakout Board]
 * Added Power-Up RESET connected to PIN 72
   as described on [Adding RESET button to ispMACH 4256ZE Breakout Board][] 
-* Having dumb LCD display to connect to Breakout Board 
-  TODO: schematic pending 
+* Having dumb LCD display - used [LCD3906](http://richardstary.wz.cz/fel/10/scs/sem/LCD3902.pdf)
+  (known as 4DR821 in late '80 socialism era) 
+  to connect to Breakout Board     
 
 # Software Requirements
 
