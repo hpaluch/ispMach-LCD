@@ -11,8 +11,8 @@ Current schematics:
 
 > NOTES:
 >
-> * I have too short wires, oops :-)
-> * Last digit show random pattern (all unused segments should be "grounded" to lcdcom PIN 40 on display)
+> * LCD "Breakout Board" is now ready for all 4 digits (currently used just one)
+> * Planning to program/connect remaining digits in next weekend (no promises).
 
 > NOTE: If you have [ispMACH 4000ZE Pico Development Kit][] then you don't need this
 > project - there is already connected LCD with working example.
