@@ -5,6 +5,10 @@ to [ispMACH 4256ZE Breakout Board][]
 
 ![ispMach with LCD](https://github.com/hpaluch/ispMach-LCD/blob/master/images/ispmach-bb-w-lcd.jpg?raw=true)
 
+Current schematics:
+
+![ispMach with LCD Schematics](https://github.com/hpaluch/ispMach-LCD/blob/master/schematic/latt_lcd.png?raw=true)
+
 > NOTES:
 >
 > * I have too short wires, oops :-)
