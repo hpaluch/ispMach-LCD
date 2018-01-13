@@ -12,8 +12,8 @@ EN_PinMacrocell = yes;
 
 [Revision]
 Parent = lc4k256e.lci;
-DATE = 12/10/2017;
-TIME = 13:35:32;
+DATE = 01/13/2018;
+TIME = 12:11:19;
 Source_Format = Pure_Verilog_HDL;
 Synthesis = Synplify;
 
@@ -44,6 +44,13 @@ lcdseg1_3_ = Pin, 8, -, C, 4;
 lcdseg1_4_ = Pin, 9, -, C, 2;
 lcdseg1_5_ = Pin, 11, -, D, 14;
 lcdseg1_6_ = Pin, 12, -, D, 12;
+lcdseg2_0_ = Pin, 13, -, D, 10;
+lcdseg2_1_ = Pin, 14, -, D, 8;
+lcdseg2_2_ = Pin, 15, -, D, 6;
+lcdseg2_3_ = Pin, 16, -, D, 4;
+lcdseg2_4_ = Pin, 21, -, E, 2;
+lcdseg2_5_ = Pin, 22, -, E, 4;
+lcdseg2_6_ = Pin, 23, -, E, 6;
 
 [Group Assignments]
 layer = OFF;
@@ -85,11 +92,18 @@ lcdseg1_3_ = -, PIN, 0, -;
 lcdseg1_4_ = -, PIN, 0, -;
 lcdseg1_5_ = -, PIN, 0, -;
 lcdseg1_6_ = -, PIN, 0, -;
+lcdseg2_0_ = -, PIN, 0, -;
+lcdseg2_1_ = -, PIN, 0, -;
+lcdseg2_2_ = -, PIN, 0, -;
+lcdseg2_3_ = -, PIN, 0, -;
+lcdseg2_4_ = -, PIN, 0, -;
+lcdseg2_6_ = -, PIN, 0, -;
 
 [Pullup]
 OFF = nrst, led_0_, led_1_, led_2_, led_3_, led_4_, led_5_, led_6_, led_7_, lcdcom, 
 	lcdseg1_0_, lcdseg1_1_, lcdseg1_2_, lcdseg1_3_, lcdseg1_4_, lcdseg1_5_, 
-	lcdseg1_6_;
+	lcdseg1_6_, lcdseg2_0_, lcdseg2_1_, lcdseg2_2_, lcdseg2_3_, lcdseg2_4_, 
+	lcdseg2_6_;
 
 [Slewrate]
 
