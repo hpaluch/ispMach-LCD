@@ -9,10 +9,6 @@ Current schematics:
 
 ![ispMach with LCD Schematics](https://github.com/hpaluch/ispMach-LCD/blob/master/schematic/latt_lcd.png?raw=true)
 
-> NOTES:
->
-> * LCD "Breakout Board" is now ready for all 4 digits (currently used just one)
-> * Planning to program/connect remaining digits in next weekend (no promises).
 
 > NOTE: If you have [ispMACH 4000ZE Pico Development Kit][] then you don't need this
 > project - there is already connected LCD with working example.
@@ -24,6 +20,8 @@ recommend to follow my Wiki articles:
 * [Adding RESET button to ispMACH 4256ZE Breakout Board][]
 
 > PROJECT STATUS:
+> Reached [m4-all-digits](https://github.com/hpaluch/ispMach-LCD/releases/tag/m3-1dg-counter):
+> * all digits connected
 >
 > Reached [m3-1dg-counter](https://github.com/hpaluch/ispMach-LCD/releases/tag/m3-1dg-counter):
 > * first working version - single digit on LCD
@@ -46,7 +44,7 @@ Current project report available at: https://hpaluch.github.io/ispMach-LCD/
 * Added Power-Up RESET connected to PIN 72
   as described on [Adding RESET button to ispMACH 4256ZE Breakout Board][] 
 * Having dumb LCD display - used [LCD3906](http://richardstary.wz.cz/fel/10/scs/sem/LCD3902.pdf)
-  (known as [4DS323](http://teslakatalog.cz/4DS323A.html) in late '80 socialism era)? 
+  (known as [4DS323 ????](http://teslakatalog.cz/4DS323A.html) in late '80 socialism era) 
   to connect to Breakout Board     
 
 # Software Requirements
