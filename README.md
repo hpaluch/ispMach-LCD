@@ -20,7 +20,7 @@ recommend to follow my Wiki articles:
 * [Adding RESET button to ispMACH 4256ZE Breakout Board][]
 
 > PROJECT STATUS:
-> Reached [m4-all-digits](https://github.com/hpaluch/ispMach-LCD/releases/tag/m3-1dg-counter):
+> Reached [m4-all-digits](https://github.com/hpaluch/ispMach-LCD/releases/tag/m4-all-digits):
 > * all digits connected
 >
 > Reached [m3-1dg-counter](https://github.com/hpaluch/ispMach-LCD/releases/tag/m3-1dg-counter):
