@@ -1,10 +1,11 @@
 // ispMACH 4256ZE Breakout Board (BB) with dumb LCD
 // Status: beta
-module bb_lcd (led,lcdcom,lcdseg1,lcdseg2,nrst);
+module bb_lcd (led,lcdcom,lcdseg1,lcdseg2,lcdseg3,nrst);
   output [7:0] led;
   output lcdcom; // common LCD electrode for AC signal
   output [6:0] lcdseg1; // LCD 1st 7-segment digit, must be AC signal (inverted lcdcom for active!)
   output [6:0] lcdseg2; // LCD 2nd 7-segment digit, --""--
+  output [6:0] lcdseg3; // LCD 3rd 7-segment digit, --""--
   input nrst;
 
   // increment cnt4, wrap to 0 if was 9
@@ -60,6 +61,13 @@ module bb_lcd (led,lcdcom,lcdseg1,lcdseg2,nrst);
   BB_BCD_TO_SEG7 dec2( .segout( seg2 ), .bcdin( cntb ) );
   // must be AC signal - each bit xored with lcdcom
   assign lcdseg2 = seg2 ^ { 7{ lcdcom } }; 
+
+  wire [3:0] cntc; // cntc =  (cntb + 1) % 10
+  assign cntc = inc09(cntb);
+  wire [6:0] seg3; // output for 3rd 7-segment digit - without clock!!!
+  BB_BCD_TO_SEG7 dec3( .segout( seg3 ), .bcdin( cntc ) );
+  // must be AC signal - each bit xored with lcdcom
+  assign lcdseg3 = seg3 ^ { 7{ lcdcom } }; 
 
 endmodule
 

@@ -19,8 +19,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:\projects\ispMach-LCD\project\bb_lcd.jed</File>
-			<FileTime>12/10/17 13:54:36</FileTime>
-			<JedecChecksum>0x9CCF</JedecChecksum>
+			<FileTime>01/14/18 09:40:18</FileTime>
+			<JedecChecksum>0x4429</JedecChecksum>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
