@@ -12,8 +12,8 @@ EN_PinMacrocell = yes;
 
 [Revision]
 Parent = lc4k256e.lci;
-DATE = 01/13/2018;
-TIME = 12:11:19;
+DATE = 01/14/2018;
+TIME = 09:14:24;
 Source_Format = Pure_Verilog_HDL;
 Synthesis = Synplify;
 
@@ -98,12 +98,13 @@ lcdseg2_2_ = -, PIN, 0, -;
 lcdseg2_3_ = -, PIN, 0, -;
 lcdseg2_4_ = -, PIN, 0, -;
 lcdseg2_6_ = -, PIN, 0, -;
+lcdseg2_5_ = -, PIN, 0, -;
 
 [Pullup]
 OFF = nrst, led_0_, led_1_, led_2_, led_3_, led_4_, led_5_, led_6_, led_7_, lcdcom, 
 	lcdseg1_0_, lcdseg1_1_, lcdseg1_2_, lcdseg1_3_, lcdseg1_4_, lcdseg1_5_, 
 	lcdseg1_6_, lcdseg2_0_, lcdseg2_1_, lcdseg2_2_, lcdseg2_3_, lcdseg2_4_, 
-	lcdseg2_6_;
+	lcdseg2_6_, lcdseg2_5_;
 
 [Slewrate]
 

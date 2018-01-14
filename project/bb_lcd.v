@@ -54,13 +54,12 @@ module bb_lcd (led,lcdcom,lcdseg1,lcdseg2,nrst);
   // must be AC signal - each bit xored with lcdcom
   assign lcdseg1 = seg1 ^ { 7{ lcdcom } }; 
 
-
+  wire [3:0] cntb; // cntb =  (cnta + 1) % 10
+  assign cntb = inc09(cnta);
   wire [6:0] seg2; // output for 2nd 7-segment digit - without clock!!!
-  BB_BCD_TO_SEG7 dec2( .segout( seg2 ), .bcdin( inc09(cnta) ) );
+  BB_BCD_TO_SEG7 dec2( .segout( seg2 ), .bcdin( cntb ) );
   // must be AC signal - each bit xored with lcdcom
   assign lcdseg2 = seg2 ^ { 7{ lcdcom } }; 
-
-
 
 endmodule
 
