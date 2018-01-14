@@ -21,7 +21,7 @@ Tools->Fitter Report File Format...
 <BR>
 Project Name         :  bb_lcd
 Project Path         :  C:\projects\ispMach-LCD\project
-Project Fitted on    :  Sun Jan 14 09:40:18 2018
+Project Fitted on    :  Sun Jan 14 09:59:33 2018
 
 Device               :  M4256_96
 Package              :  144
@@ -38,28 +38,28 @@ Source Format        :  Pure_Verilog_HDL
 <A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
 <BR>
 Prefit Time                     0 secs
-Load Design Time                0.06 secs
-Partition Time                  0.08 secs
+Load Design Time                0.05 secs
+Partition Time                  0.09 secs
 Place Time                      0.00 secs
-Route Time                      0.00 secs
+Route Time                      0.02 secs
 Total Fit Time                  00:00:01
 
 
 <A name="Design_Summary"></A><FONT COLOR=maroon><U><B><big>Design_Summary</big></B></U></FONT>
 <BR>
 Total Input Pins                1
-Total Logic Functions           53
-  Total Output Pins             30
+Total Logic Functions           60
+  Total Output Pins             37
   Total Bidir I/O Pins          0
   Total Buried Nodes            23
 Total Flip-Flops                17
   Total D Flip-Flops            9
   Total T Flip-Flops            8
   Total Latches                 0
-Total Product Terms             173
+Total Product Terms             192
 
 Total Reserved Pins             0
-Total Locked Pins               31
+Total Locked Pins               38
 Total Locked Nodes              2
 
 Total Unique Output Enables     0
@@ -80,14 +80,14 @@ Fmax Logic Levels               -
   Clock/Input Pins                  4        0      4    -->     0
   Input-Only Pins                  10        1      9    -->    10
   I/O / Enable Pins                 2        0      2    -->     0
-I/O Pins                           94       30     64    -->    31
-Logic Functions                   256       52    204    -->    20
+I/O Pins                           94       37     57    -->    39
+Logic Functions                   256       59    197    -->    23
   Input Registers                  96        0     96    -->     0
 
-GLB Inputs                        576       93    483    -->    16
-Logical Product Terms            1280      143   1137    -->    11
-Occupied GLBs                      16       11      5    -->    68
-Macrocells                        256       51    205    -->    19
+GLB Inputs                        576       89    487    -->    15
+Logical Product Terms            1280      162   1118    -->    12
+Occupied GLBs                      16       12      4    -->    75
+Macrocells                        256       58    198    -->    22
 
 Control Product Terms:
   GLB Clock/Clock Enables          16        4     12    -->    25
@@ -123,24 +123,24 @@ Maximum
   GLB    A      0     0     0      0/6      0    0      0             16        0        0
   GLB    B      0     0     0      0/6      0    0      0             16        0        0
   GLB    C      0    13    13      6/6      0    9      0              7       21        9
-  GLB    D      0    11    11      6/6      0    7      0              9       28        8
+  GLB    D      0    10    10      6/6      0    8      0              8       25        8
 -------------------------------------------------------------------------------------------
-  GLB    E      4     6    10      6/6      0    6      0             10       21        7
-  GLB    F      2     8    10      4/6      0    5      0             11       18        6
-  GLB    G      0     0     0      0/6      0    0      0             16        0        0
+  GLB    E      0     5     5      6/6      0    6      0             10       21        6
+  GLB    F      0    11    11      6/6      0    7      0              9       27        9
+  GLB    G      0     5     5      5/6      0    5      0             11       19        5
   GLB    H      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
   GLB    I      0    18    18      6/6      0   11      0              5       22       11
-  GLB    J      3     1     4      2/6      0    3      0             13        4        3
+  GLB    J      1     4     5      2/6      0    4      0             12        6        4
   GLB    K      1     3     4      0/6      0    2      0             14        5        2
-  GLB    L      0     4     4      0/6      0    2      0             14        6        2
+  GLB    L      0     0     0      0/6      0    0      0             16        0        0
 -------------------------------------------------------------------------------------------
-  GLB    M      3     4     7      0/6      0    2      0             14        4        2
-  GLB    N      1     5     6      0/6      0    2      0             14        7        2
-  GLB    O      1     5     6      0/6      0    2      0             14        7        2
-  GLB    P      0     0     0      0/6      0    0      0             16        0        0
+  GLB    M      4     0     4      0/6      0    1      0             15        3        1
+  GLB    N      2     0     2      0/6      0    1      0             15        2        1
+  GLB    O      1     4     5      0/6      0    2      0             14        5        2
+  GLB    P      1     6     7      0/6      0    2      0             14        6        2
 -------------------------------------------------------------------------------------------
-TOTALS:        15    78    93     30/96     0   51      0            205      143       54
+TOTALS:        10    79    89     37/96     0   58      0            198      162       60
 
 &lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
 &lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
@@ -169,10 +169,10 @@ Maximum
   GLB    K   0      0         0      0      0      0      0
   GLB    L   0      0         0      0      0      0      0
 ------------------------------------------------------------------------------
-  GLB    M   1      0         0      0      0      0      0
+  GLB    M   0      0         0      0      0      0      0
   GLB    N   0      0         0      0      0      0      0
   GLB    O   1      0         0      0      0      0      0
-  GLB    P   0      0         0      0      0      0      0
+  GLB    P   1      0         0      0      0      0      0
 ------------------------------------------------------------------------------
 
 &lt;Note&gt; 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
@@ -258,50 +258,50 @@ OSCTIMER:                         Pin/Node
 <BR>
 <B>      | Pin   | Bank |GLB |Assigned|                 | Signal|            | PG
 Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enable
-</B>------------------------------------------------------------------------------------------
+</B>-----------------------------------------------------------------------------------------
 1     | GND   |   -  |    |        |                 |       |            |
 2     | TDI   |   -  |    |        |                 |       |            |
 3     |VCCIO0 |   -  |    |        |                 |       |            |
-4     |  I_O  |   0  |C12 |    *   |LVCMOS18         | Output|<A href=#36>lcdcom</A>|
-5     |  I_O  |   0  |C10 |    *   |LVCMOS18         | Output|<A href=#23>lcdseg1_0_</A>|
-6     |  I_O  |   0  |C8  |    *   |LVCMOS18         | Output|<A href=#22>lcdseg1_1_</A>|
-7     |  I_O  |   0  |C6  |    *   |LVCMOS18         | Output|<A href=#21>lcdseg1_2_</A>|
-8     |  I_O  |   0  |C4  |    *   |LVCMOS18         | Output|<A href=#20>lcdseg1_3_</A>|
-9     |  I_O  |   0  |C2  |    *   |LVCMOS18         | Output|<A href=#19>lcdseg1_4_</A>|
+4     |  I_O  |   0  |C12 |    *   |LVCMOS18         | Output|<A href=#43>lcdcom</A>|
+5     |  I_O  |   0  |C10 |    *   |LVCMOS18         | Output|<A href=#25>lcdseg1_0_</A>|
+6     |  I_O  |   0  |C8  |    *   |LVCMOS18         | Output|<A href=#24>lcdseg1_1_</A>|
+7     |  I_O  |   0  |C6  |    *   |LVCMOS18         | Output|<A href=#23>lcdseg1_2_</A>|
+8     |  I_O  |   0  |C4  |    *   |LVCMOS18         | Output|<A href=#22>lcdseg1_3_</A>|
+9     |  I_O  |   0  |C2  |    *   |LVCMOS18         | Output|<A href=#21>lcdseg1_4_</A>|
 10    |GNDIO0 |   -  |    |        |                 |       |            |
-11    |  I_O  |   0  |D14 |    *   |LVCMOS18         | Output|<A href=#18>lcdseg1_5_</A>|
-12    |  I_O  |   0  |D12 |    *   |LVCMOS18         | Output|<A href=#7>lcdseg1_6_</A>|
-13    |  I_O  |   0  |D10 |    *   |LVCMOS18         | Output|<A href=#29>lcdseg2_0_</A>|
-14    |  I_O  |   0  |D8  |    *   |LVCMOS18         | Output|<A href=#28>lcdseg2_1_</A>|
-15    |  I_O  |   0  |D6  |    *   |LVCMOS18         | Output|<A href=#27>lcdseg2_2_</A>|
-16    |  I_O  |   0  |D4  |    *   |LVCMOS18         | Output|<A href=#26>lcdseg2_3_</A>|
+11    |  I_O  |   0  |D14 |    *   |LVCMOS18         | Output|<A href=#20>lcdseg1_5_</A>|
+12    |  I_O  |   0  |D12 |    *   |LVCMOS18         | Output|<A href=#8>lcdseg1_6_</A>|
+13    |  I_O  |   0  |D10 |    *   |LVCMOS18         | Output|<A href=#31>lcdseg2_0_</A>|
+14    |  I_O  |   0  |D8  |    *   |LVCMOS18         | Output|<A href=#30>lcdseg2_1_</A>|
+15    |  I_O  |   0  |D6  |    *   |LVCMOS18         | Output|<A href=#29>lcdseg2_2_</A>|
+16    |  I_O  |   0  |D4  |    *   |LVCMOS18         | Output|<A href=#28>lcdseg2_3_</A>|
 17    | IN0   |   0  |    |        |                 |       |            |
 18    | NC    |   -  |    |        |                 |       |            |
 19    |VCCIO0 |   -  |    |        |                 |       |            |
 20    | IN1   |   0  |    |        |                 |       |            |
-21    |  I_O  |   0  |E2  |    *   |LVCMOS18         | Output|<A href=#25>lcdseg2_4_</A>|
-22    |  I_O  |   0  |E4  |    *   |LVCMOS18         | Output|<A href=#24>lcdseg2_5_</A>|
-23    |  I_O  |   0  |E6  |    *   |LVCMOS18         | Output|<A href=#8>lcdseg2_6_</A>|
-24    |  I_O  |   0  |E8  |    *   |LVCMOS18         | Output|<A href=#35>lcdseg3_0_</A>|
-25    |  I_O  |   0  |E10 |    *   |LVCMOS18         | Output|<A href=#34>lcdseg3_1_</A>|
-26    |  I_O  |   0  |E12 |    *   |LVCMOS18         | Output|<A href=#33>lcdseg3_2_</A>|
+21    |  I_O  |   0  |E2  |    *   |LVCMOS18         | Output|<A href=#27>lcdseg2_4_</A>|
+22    |  I_O  |   0  |E4  |    *   |LVCMOS18         | Output|<A href=#26>lcdseg2_5_</A>|
+23    |  I_O  |   0  |E6  |    *   |LVCMOS18         | Output|<A href=#9>lcdseg2_6_</A>|
+24    |  I_O  |   0  |E8  |    *   |LVCMOS18         | Output|<A href=#37>lcdseg3_0_</A>|
+25    |  I_O  |   0  |E10 |    *   |LVCMOS18         | Output|<A href=#36>lcdseg3_1_</A>|
+26    |  I_O  |   0  |E12 |    *   |LVCMOS18         | Output|<A href=#35>lcdseg3_2_</A>|
 27    |GNDIO0 |   -  |    |        |                 |       |            |
-28    |  I_O  |   0  |F2  |    *   |LVCMOS18         | Output|<A href=#32>lcdseg3_3_</A>|
-29    |  I_O  |   0  |F4  |    *   |LVCMOS18         | Output|<A href=#31>lcdseg3_4_</A>|
-30    |  I_O  |   0  |F6  |    *   |LVCMOS18         | Output|<A href=#30>lcdseg3_5_</A>|
-31    |  I_O  |   0  |F8  |    *   |LVCMOS18         | Output|<A href=#9>lcdseg3_6_</A>|
-32    |  I_O  |   0  |F10 |        |                 |       |            |
-33    |  I_O  |   0  |F12 |        |                 |       |            |
+28    |  I_O  |   0  |F2  |    *   |LVCMOS18         | Output|<A href=#34>lcdseg3_3_</A>|
+29    |  I_O  |   0  |F4  |    *   |LVCMOS18         | Output|<A href=#33>lcdseg3_4_</A>|
+30    |  I_O  |   0  |F6  |    *   |LVCMOS18         | Output|<A href=#32>lcdseg3_5_</A>|
+31    |  I_O  |   0  |F8  |    *   |LVCMOS18         | Output|<A href=#10>lcdseg3_6_</A>|
+32    |  I_O  |   0  |F10 |    *   |LVCMOS18         | Output|<A href=#6>lcdseg4_0_</A>|
+33    |  I_O  |   0  |F12 |    *   |LVCMOS18         | Output|<A href=#42>lcdseg4_1_</A>|
 34    |VCCIO0 |   -  |    |        |                 |       |            |
 35    | TCK   |   -  |    |        |                 |       |            |
 36    | VCC   |   -  |    |        |                 |       |            |
 37    | GND   |   -  |    |        |                 |       |            |
 38    | IN2   |   0  |    |        |                 |       |            |
-39    |  I_O  |   0  |G12 |        |                 |       |            |
-40    |  I_O  |   0  |G10 |        |                 |       |            |
-41    |  I_O  |   0  |G8  |        |                 |       |            |
-42    |  I_O  |   0  |G6  |        |                 |       |            |
-43    |  I_O  |   0  |G4  |        |                 |       |            |
+39    |  I_O  |   0  |G12 |    *   |LVCMOS18         | Output|<A href=#41>lcdseg4_2_</A>|
+40    |  I_O  |   0  |G10 |    *   |LVCMOS18         | Output|<A href=#40>lcdseg4_3_</A>|
+41    |  I_O  |   0  |G8  |    *   |LVCMOS18         | Output|<A href=#39>lcdseg4_4_</A>|
+42    |  I_O  |   0  |G6  |    *   |LVCMOS18         | Output|<A href=#38>lcdseg4_5_</A>|
+43    |  I_O  |   0  |G4  |    *   |LVCMOS18         | Output|<A href=#11>lcdseg4_6_</A>|
 44    |  I_O  |   0  |G2  |        |                 |       |            |
 45    | IN3   |   0  |    |        |                 |       |            |
 46    |GNDIO0 |   -  |    |        |                 |       |            |
@@ -316,21 +316,21 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 55    |GNDIO1 |   -  |    |        |                 |       |            |
 56    |INCLK2 |   1  |    |        |                 |       |            |
 57    | VCC   |   -  |    |        |                 |       |            |
-58    |  I_O  |   1  |I2  |    *   |LVCMOS18         | Output|<A href=#6>led_7_</A>|
-59    |  I_O  |   1  |I4  |    *   |LVCMOS18         | Output|<A href=#11>led_6_</A>|
-60    |  I_O  |   1  |I6  |    *   |LVCMOS18         | Output|<A href=#12>led_5_</A>|
-61    |  I_O  |   1  |I8  |    *   |LVCMOS18         | Output|<A href=#13>led_4_</A>|
-62    |  I_O  |   1  |I10 |    *   |LVCMOS18         | Output|<A href=#14>led_3_</A>|
-63    |  I_O  |   1  |I12 |    *   |LVCMOS18         | Output|<A href=#15>led_2_</A>|
+58    |  I_O  |   1  |I2  |    *   |LVCMOS18         | Output|<A href=#7>led_7_</A>|
+59    |  I_O  |   1  |I4  |    *   |LVCMOS18         | Output|<A href=#13>led_6_</A>|
+60    |  I_O  |   1  |I6  |    *   |LVCMOS18         | Output|<A href=#14>led_5_</A>|
+61    |  I_O  |   1  |I8  |    *   |LVCMOS18         | Output|<A href=#15>led_4_</A>|
+62    |  I_O  |   1  |I10 |    *   |LVCMOS18         | Output|<A href=#16>led_3_</A>|
+63    |  I_O  |   1  |I12 |    *   |LVCMOS18         | Output|<A href=#17>led_2_</A>|
 64    |VCCIO1 |   -  |    |        |                 |       |            |
 65    |GNDIO1 |   -  |    |        |                 |       |            |
 66    |  I_O  |   1  |J2  |        |                 |       |            |
 67    |  I_O  |   1  |J4  |        |                 |       |            |
 68    |  I_O  |   1  |J6  |        |                 |       |            |
 69    |  I_O  |   1  |J8  |        |                 |       |            |
-70    |  I_O  |   1  |J10 |    *   |LVCMOS18         | Output|<A href=#16>led_1_</A>|
-71    |  I_O  |   1  |J12 |    *   |LVCMOS18         | Output|<A href=#17>led_0_</A>|
-72    | IN4   |   0  |    |    *   |LVCMOS18         | Input |<A href=#10>nrst</A>|
+70    |  I_O  |   1  |J10 |    *   |LVCMOS18         | Output|<A href=#18>led_1_</A>|
+71    |  I_O  |   1  |J12 |    *   |LVCMOS18         | Output|<A href=#19>led_0_</A>|
+72    | IN4   |   0  |    |    *   |LVCMOS18         | Input |<A href=#12>nrst</A>|
 73    | GND   |   -  |    |        |                 |       |            |
 74    | TMS   |   -  |    |        |                 |       |            |
 75    |VCCIO1 |   -  |    |        |                 |       |            |
@@ -403,7 +403,7 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 142   |  I_O  |   0  |B10 |        |                 |       |            |
 143   |  I_O  |   0  |B12 |        |                 |       |            |
 144   | IN9   |   0  |    |        |                 |       |            |
-------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 &lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
 &lt;Note&gt; Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
@@ -422,7 +422,7 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
          Pin    Fanout
  Pin GLB Type                       Pullup Signal
 </B>-------------------------------------------------
-  72  --  IN       ----------------     Off <A name=10>nrst</A>
+  72  --  IN       ----------------     Off <A name=12>nrst</A>
 -------------------------------------------------
 
 
@@ -432,36 +432,43 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
           N         L Mc   R E U C O F B Fanout
  Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
 </B>-----------------------------------------------------------------------------------
-   4   C  7  -   1  1 TFF    * R         5  --CDEF--I-------  Fast    Off <A href=#36>lcdcom</A>
-   5   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#23>lcdseg1_0_</A>
-   6   C  5  -   5  1 COM                   ----------------  Fast    Off <A href=#22>lcdseg1_1_</A>
-   7   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#21>lcdseg1_2_</A>
-   8   C  5  -   4  1 COM                   ----------------  Fast    Off <A href=#20>lcdseg1_3_</A>
-   9   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#19>lcdseg1_4_</A>
-  11   D  5  -   4  1 COM                   ----------------  Fast    Off <A href=#18>lcdseg1_5_</A>
-  12   D  6  -   4  1 COM                   ----------------  Fast    Off <A href=#7>lcdseg1_6_</A>
-  13   D  6  -   5  1 COM                   ----------------  Fast    Off <A href=#29>lcdseg2_0_</A>
-  14   D  6  -   4  1 COM                   ----------------  Fast    Off <A href=#28>lcdseg2_1_</A>
-  15   D  4  -   4  1 COM                   ----------------  Fast    Off <A href=#27>lcdseg2_2_</A>
-  16   D  6  -   6  2 COM                   ----------------  Fast    Off <A href=#26>lcdseg2_3_</A>
-  21   E  4  -   4  1 COM                   ----------------  Fast    Off <A href=#25>lcdseg2_4_</A>
-  22   E  6  -   6  2 COM                   ----------------  Fast    Off <A href=#24>lcdseg2_5_</A>
-  23   E  6  -   4  1 COM                   ----------------  Fast    Off <A href=#8>lcdseg2_6_</A>
-  24   E  2  -   2  1 COM                   ----------------  Fast    Off <A href=#35>lcdseg3_0_</A>
-  25   E  3  -   3  1 COM                   ----------------  Fast    Off <A href=#34>lcdseg3_1_</A>
-  26   E  5  -   2  1 COM                   ----------------  Fast    Off <A href=#33>lcdseg3_2_</A>
-  28   F  6  -   4  1 COM                   ----------------  Fast    Off <A href=#32>lcdseg3_3_</A>
-  29   F  5  -   3  1 COM                   ----------------  Fast    Off <A href=#31>lcdseg3_4_</A>
-  30   F  8  -   4  1 COM                   ----------------  Fast    Off <A href=#30>lcdseg3_5_</A>
-  31   F  7  -   7  2 COM                   ----------------  Fast    Off <A href=#9>lcdseg3_6_</A>
-  71   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#17>led_0_</A>
-  70   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#16>led_1_</A>
-  63   I 13  -   1  1 TFF    * R            ----------------  Fast    Off <A href=#15>led_2_</A>
-  62   I  1  -   1  1 COM                   ----------------  Fast    Off <A href=#14>led_3_</A>
-  61   I  3  -   2  1 DFF  *   S         5  --CD----I-KL----  Fast    Off <A href=#13>led_4_</A>
-  60   I  6  -   4  1 DFF  *   S         8  --CDEF--IJKL----  Fast    Off <A href=#12>led_5_</A>
-  59   I  5  -   4  1 DFF  *   S         8  --CDEF--IJKL----  Fast    Off <A href=#11>led_6_</A>
-  58   I  6  -   5  1 DFF  *   S         7  --CDEF--IJ-L----  Fast    Off <A href=#6>led_7_</A>
+   4   C  7  -   1  1 TFF    * R         6  --CDEFG-I-------  Fast    Off <A href=#43>lcdcom</A>
+   5   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#25>lcdseg1_0_</A>
+   6   C  5  -   5  1 COM                   ----------------  Fast    Off <A href=#24>lcdseg1_1_</A>
+   7   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#23>lcdseg1_2_</A>
+   8   C  5  -   4  1 COM                   ----------------  Fast    Off <A href=#22>lcdseg1_3_</A>
+   9   C  5  -   3  1 COM                   ----------------  Fast    Off <A href=#21>lcdseg1_4_</A>
+  11   D  5  -   4  1 COM                   ----------------  Fast    Off <A href=#20>lcdseg1_5_</A>
+  12   D  6  -   4  1 COM                   ----------------  Fast    Off <A href=#8>lcdseg1_6_</A>
+  13   D  5  -   3  1 COM                   ----------------  Fast    Off <A href=#31>lcdseg2_0_</A>
+  14   D  5  -   4  1 COM                   ----------------  Fast    Off <A href=#30>lcdseg2_1_</A>
+  15   D  4  -   4  1 COM                   ----------------  Fast    Off <A href=#29>lcdseg2_2_</A>
+  16   D  5  -   4  1 COM                   ----------------  Fast    Off <A href=#28>lcdseg2_3_</A>
+  21   E  4  -   4  1 COM                   ----------------  Fast    Off <A href=#27>lcdseg2_4_</A>
+  22   E  5  -   4  1 COM                   ----------------  Fast    Off <A href=#26>lcdseg2_5_</A>
+  23   E  5  -   3  1 COM                   ----------------  Fast    Off <A href=#9>lcdseg2_6_</A>
+  24   E  5  -   5  1 COM                   ----------------  Fast    Off <A href=#37>lcdseg3_0_</A>
+  25   E  3  -   3  1 COM                   ----------------  Fast    Off <A href=#36>lcdseg3_1_</A>
+  26   E  5  -   2  1 COM                   ----------------  Fast    Off <A href=#35>lcdseg3_2_</A>
+  28   F  8  -   7  2 COM                   ----------------  Fast    Off <A href=#34>lcdseg3_3_</A>
+  29   F  5  -   3  1 COM                   ----------------  Fast    Off <A href=#33>lcdseg3_4_</A>
+  30   F  8  -   4  1 COM                   ----------------  Fast    Off <A href=#32>lcdseg3_5_</A>
+  31   F  5  -   6  2 COM                   ----------------  Fast    Off <A href=#10>lcdseg3_6_</A>
+  32   F  5  -   3  1 COM                   ----------------  Fast    Off <A href=#6>lcdseg4_0_</A>
+  33   F  5  -   4  1 COM                   ----------------  Fast    Off <A href=#42>lcdseg4_1_</A>
+  39   G  5  -   3  1 COM                   ----------------  Fast    Off <A href=#41>lcdseg4_2_</A>
+  40   G  5  -   4  1 COM                   ----------------  Fast    Off <A href=#40>lcdseg4_3_</A>
+  41   G  5  -   4  1 COM                   ----------------  Fast    Off <A href=#39>lcdseg4_4_</A>
+  42   G  5  -   4  1 COM                   ----------------  Fast    Off <A href=#38>lcdseg4_5_</A>
+  43   G  5  -   4  1 COM                   ----------------  Fast    Off <A href=#11>lcdseg4_6_</A>
+  71   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#19>led_0_</A>
+  70   J  1  1   1  1 COM                   ----------------  Fast    Off <A href=#18>led_1_</A>
+  63   I 13  -   1  1 TFF    * R            ----------------  Fast    Off <A href=#17>led_2_</A>
+  62   I  1  -   1  1 COM                   ----------------  Fast    Off <A href=#16>led_3_</A>
+  61   I  3  -   2  1 DFF  *   S         5  --CD----IJK-----  Fast    Off <A href=#15>led_4_</A>
+  60   I  6  -   4  1 DFF  *   S         6  --CD-F--IJK-----  Fast    Off <A href=#14>led_5_</A>
+  59   I  5  -   4  1 DFF  *   S         6  --CD-F--IJK-----  Fast    Off <A href=#13>led_6_</A>
+  58   I  6  -   5  1 DFF  *   S         6  --CD-F--IJK-----  Fast    Off <A href=#7>led_7_</A>
 -----------------------------------------------------------------------------------
 
 &lt;Note&gt; CLS = Number of clusters used
@@ -503,30 +510,30 @@ Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enab
 <B>        I         C      P R P       Node
         N         L Mc   R E U C I F Fanout
 Mc GLB  P LL PTs  S Type E S P E R P                     Signal
-</B>----------------------------------------------------------------------------
- 5   J  3  -   2  1 COM              2  --CD------------  <A href=#55>N_120_i</A>
-15   F  0  -   0  1 COM              4  --C-----I---M-O-  <A href=#59>_dup_gnd_n_n</A>
- 3   L  4  -   4  1 COM              4  ---DEF-------N--  <A href=#53>dec2_G_142</A>
-15   C  0  -   0  1 COM                 ----------------  <A href=#37>gnd_n_n</A>
- 9   L  4  -   2  1 COM              5  ---DEF----K--N--  <A href=#52>inc09_0_un4_inc09_n</A>
-15   F  0  -   0  0 COM              4  --C-----I---M-O-  <A href=#38>osc_sclk</A>
- 3   N  6  -   4  1 COM              1  ----E-----------  <A href=#57>seg3_0_0__n</A>
- 3   C  3  -   1  1 DFF    * R       4  --C-----I---M-O-  <A href=#39>slow_clk_0_</A>
- 9   I 12  -   1  1 TFF    * R       1  --------I-------  <A href=#48>slow_clk_10_</A>
-12   I 13  -   1  1 TFF    * R       1  --------I-------  <A href=#56>slow_clk_11_reg</A>
- 9   M  4  -   2  1 DFF    * R       4  --C-----I---M-O-  <A href=#40>slow_clk_1_</A>
- 9   O  5  -   3  1 DFF    * R       4  --C-----I---M-O-  <A href=#41>slow_clk_2_</A>
- 3   O  6  -   4  1 DFF    * R       4  --C-----I---M-O-  <A href=#42>slow_clk_3_</A>
- 3   M  7  -   2  1 DFF    * R       3  --C-----I---M---  <A href=#43>slow_clk_4_</A>
- 5   C  8  -   1  1 TFF    * R       1  --------I-------  <A href=#44>slow_clk_6_</A>
- 3   I  9  -   1  1 TFF    * R       1  --------I-------  <A href=#45>slow_clk_7_</A>
- 5   I 10  -   1  1 TFF    * R       1  --------I-------  <A href=#46>slow_clk_8_</A>
- 7   I 11  -   1  1 TFF    * R       1  --------I-------  <A href=#47>slow_clk_9_</A>
- 9   K  3  -   2  1 COM              4  ---DEF-------N--  <A href=#50>un10_inc09_1__n</A>
- 3   K  4  -   3  1 COM              4  ---DEF-------N--  <A href=#51>un10_inc09_2__n</A>
-12   D  2  -   1  1 COM              4  ---DEF-------N--  <A href=#49>un18_inc09_li_0__n</A>
- 9   N  5  -   3  1 COM              2  -----F-------N--  <A href=#54>un21_inc09_i_3__n</A>
-----------------------------------------------------------------------------
+</B>---------------------------------------------------------------------------
+10   J  3  -   2  1 COM              2  --CD------------  <A href=#63>N_163_i</A>
+15   F  0  -   0  1 COM              4  --C-----I-----OP  <A href=#66>_dup_gnd_n_n</A>
+ 7   N  2  -   2  1 COM              2  -----FG---------  <A href=#57>cnt10a_G_198</A>
+15   C  0  -   0  1 COM                 ----------------  <A href=#45>gnd_n_n</A>
+15   F  0  -   0  0 COM              4  --C-----I-----OP  <A href=#46>osc_sclk</A>
+ 3   C  3  -   1  1 DFF    * R       4  --C-----I-----OP  <A href=#47>slow_clk_0_</A>
+ 9   I 12  -   1  1 TFF    * R       1  --------I-------  <A href=#56>slow_clk_10_</A>
+12   I 13  -   1  1 TFF    * R       1  --------I-------  <A href=#64>slow_clk_11_reg</A>
+ 9   O  4  -   2  1 DFF    * R       4  --C-----I-----OP  <A href=#48>slow_clk_1_</A>
+ 3   O  5  -   3  1 DFF    * R       4  --C-----I-----OP  <A href=#49>slow_clk_2_</A>
+ 3   P  6  -   4  1 DFF    * R       3  --C-----I------P  <A href=#50>slow_clk_3_</A>
+ 9   P  7  -   2  1 DFF    * R       3  --C-----I------P  <A href=#51>slow_clk_4_</A>
+ 5   C  8  -   1  1 TFF    * R       1  --------I-------  <A href=#52>slow_clk_6_</A>
+ 3   I  9  -   1  1 TFF    * R       1  --------I-------  <A href=#53>slow_clk_7_</A>
+ 5   I 10  -   1  1 TFF    * R       1  --------I-------  <A href=#54>slow_clk_8_</A>
+ 7   I 11  -   1  1 TFF    * R       1  --------I-------  <A href=#55>slow_clk_9_</A>
+ 9   K  3  -   2  1 COM              5  ---DEF------MN--  <A href=#60>un10_inc09_1__n</A>
+ 3   K  4  -   3  1 COM              5  ---DEF------MN--  <A href=#44>un10_inc09_2__n</A>
+ 6   J  4  -   2  1 COM              4  ---DEF------M---  <A href=#59>un10_inc09_3__n</A>
+ 2   D  2  -   1  1 COM              5  ---DEFG-----M---  <A href=#58>un18_inc09_li_0__n</A>
+ 7   M  4  -   3  1 COM              2  -----FG---------  <A href=#62>un32_inc09_1__n</A>
+ 3   D  3  -   1  1 COM              2  -----FG---------  <A href=#61>un32_inc09_3__n</A>
+---------------------------------------------------------------------------
 
 &lt;Note&gt; CLS = Number of clusters used
        INP = Number of input signals
@@ -545,258 +552,287 @@ Mc GLB  P LL PTs  S Type E S P E R P                     Signal
 <A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
 <BR>
 
-<A name=55>N_120_i</A> = <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A>
-    # <A href=#6>led_7_.Q</A> ; (2 pterms, 3 signals)
+<A name=63>N_163_i</A> = <A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A>
+    # <A href=#7>led_7_.Q</A> ; (2 pterms, 3 signals)
 
-<A name=59>_dup_gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
+<A name=66>_dup_gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
 
-<A name=53>dec2_G_142</A> = <A href=#6>led_7_.Q</A> & !<A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A>
-    # !led_7_.Q & led_6_.Q
-    # !led_7_.Q & led_5_.Q
-    # !led_7_.Q & led_4_.Q ; (4 pterms, 4 signals)
+<A name=57>cnt10a_G_198</A> = <A href=#44>un10_inc09_2__n</A> & !<A href=#60>un10_inc09_1__n</A>
+    # !un10_inc09_2__n & un10_inc09_1__n ; (2 pterms, 2 signals)
 
-<A name=37>gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
+<A name=45>gnd_n_n</A> = 0 ; (0 pterm, 0 signal)
 
-<A name=52>inc09_0_un4_inc09_n</A> = <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & <A href=#13>led_4_.Q</A>
-    # <A href=#6>led_7_.Q</A> ; (2 pterms, 4 signals)
+<A name=43>lcdcom.T</A> = <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A> & <A href=#50>slow_clk_3_.Q</A>
+       & <A href=#51>slow_clk_4_.Q</A> ; (1 pterm, 5 signals)
+lcdcom.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+lcdcom.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=36>lcdcom.T</A> = <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A> & <A href=#42>slow_clk_3_.Q</A>
-       & <A href=#43>slow_clk_4_.Q</A> ; (1 pterm, 5 signals)
-lcdcom.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-lcdcom.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
-
-<A name=23>lcdseg1_0_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & <A href=#13>led_4_.Q</A>
+<A name=25>lcdseg1_0_.X1</A> = <A href=#7>led_7_.Q</A> & !<A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A> & <A href=#15>led_4_.Q</A>
     # led_7_.Q & led_6_.Q & led_5_.Q & !led_4_.Q ; (2 pterms, 4 signals)
-lcdseg1_0_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_0_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=22>lcdseg1_1_.X1</A> = !<A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A>
-    # !<A href=#6>led_7_.Q</A> & !led_6_.Q
+<A name=24>lcdseg1_1_.X1</A> = !<A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
+    # !<A href=#7>led_7_.Q</A> & !led_6_.Q
     # !led_7_.Q & !led_5_.Q
     # !led_6_.Q & !led_5_.Q & led_4_.Q ; (4 pterms, 4 signals)
-lcdseg1_1_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_1_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=21>lcdseg1_2_.X1</A> = !<A href=#55>N_120_i</A>
-    # <A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> & <A href=#13>led_4_.Q</A> ; (2 pterms, 4 signals)
-lcdseg1_2_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=23>lcdseg1_2_.X1</A> = !<A href=#63>N_163_i</A>
+    # <A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> & <A href=#15>led_4_.Q</A> ; (2 pterms, 4 signals)
+lcdseg1_2_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=20>lcdseg1_3_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & <A href=#13>led_4_.Q</A>
+<A name=22>lcdseg1_3_.X1</A> = <A href=#7>led_7_.Q</A> & !<A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A> & <A href=#15>led_4_.Q</A>
     # led_7_.Q & led_6_.Q & led_5_.Q & !led_4_.Q
     # led_7_.Q & !led_6_.Q & !led_5_.Q & !led_4_.Q ; (3 pterms, 4 signals)
-lcdseg1_3_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_3_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=19>lcdseg1_4_.X1</A> = !<A href=#13>led_4_.Q</A> & <A href=#55>N_120_i</A>
-    # !<A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & N_120_i ; (2 pterms, 4 signals)
-lcdseg1_4_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=21>lcdseg1_4_.X1</A> = !<A href=#15>led_4_.Q</A> & <A href=#63>N_163_i</A>
+    # !<A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A> & N_163_i ; (2 pterms, 4 signals)
+lcdseg1_4_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=18>lcdseg1_5_.X1</A> = <A href=#6>led_7_.Q</A> & !<A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A>
-    # led_7_.Q & <A href=#11>led_6_.Q</A> & !led_4_.Q
+<A name=20>lcdseg1_5_.X1</A> = <A href=#7>led_7_.Q</A> & !<A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
+    # led_7_.Q & <A href=#13>led_6_.Q</A> & !led_4_.Q
     # led_7_.Q & led_6_.Q & !led_5_.Q ; (3 pterms, 4 signals)
-lcdseg1_5_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+lcdseg1_5_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=7>lcdseg1_6_.X1</A> = !<A href=#55>N_120_i</A>
-    # <A href=#6>led_7_.Q</A> & <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A>
-    # !led_6_.Q & !led_5_.Q & !<A href=#13>led_4_.Q</A> ; (3 pterms, 5 signals)
-lcdseg1_6_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=8>lcdseg1_6_.X1</A> = !<A href=#63>N_163_i</A>
+    # <A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A>
+    # !led_6_.Q & !led_5_.Q & !<A href=#15>led_4_.Q</A> ; (3 pterms, 5 signals)
+lcdseg1_6_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=29>lcdseg2_0_.X1</A> = !<A href=#49>un18_inc09_li_0__n</A> & !<A href=#50>un10_inc09_1__n</A> & <A href=#51>un10_inc09_2__n</A>
-       & !<A href=#52>inc09_0_un4_inc09_n</A>
-    # !un18_inc09_li_0__n & !un10_inc09_1__n & un10_inc09_2__n & !<A href=#53>dec2_G_142</A>
-    # un18_inc09_li_0__n & !un10_inc09_1__n & !un10_inc09_2__n
-       & !inc09_0_un4_inc09_n
-    # un18_inc09_li_0__n & !un10_inc09_1__n & !un10_inc09_2__n & !dec2_G_142 ; (4 pterms, 5 signals)
-lcdseg2_0_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=31>lcdseg2_0_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A>
+    # un10_inc09_2__n & !un18_inc09_li_0__n & !un10_inc09_3__n
+       & !un10_inc09_1__n ; (2 pterms, 4 signals)
+lcdseg2_0_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=28>lcdseg2_1_.X1</A> = <A href=#49>un18_inc09_li_0__n</A> & !<A href=#50>un10_inc09_1__n</A> & <A href=#51>un10_inc09_2__n</A>
-    # !un10_inc09_1__n & un10_inc09_2__n & <A href=#52>inc09_0_un4_inc09_n</A> & <A href=#53>dec2_G_142</A>
-    # !un18_inc09_li_0__n & un10_inc09_1__n & un10_inc09_2__n ; (3 pterms, 5 signals)
-lcdseg2_1_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=30>lcdseg2_1_.X1</A> = <A href=#44>un10_inc09_2__n</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#60>un10_inc09_1__n</A>
+    # un10_inc09_2__n & <A href=#59>un10_inc09_3__n</A> & !un10_inc09_1__n
+    # un10_inc09_2__n & !un18_inc09_li_0__n & un10_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg2_1_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=27>lcdseg2_2_</A> = <A href=#36>lcdcom.Q</A> & !<A href=#49>un18_inc09_li_0__n</A> & <A href=#50>un10_inc09_1__n</A>
-       & !<A href=#51>un10_inc09_2__n</A>
-    # !lcdcom.Q & !un10_inc09_1__n
+<A name=29>lcdseg2_2_</A> = <A href=#43>lcdcom.Q</A> & !<A href=#44>un10_inc09_2__n</A> & !<A href=#58>un18_inc09_li_0__n</A>
+       & <A href=#60>un10_inc09_1__n</A>
     # !lcdcom.Q & un18_inc09_li_0__n
-    # !lcdcom.Q & un10_inc09_2__n ; (4 pterms, 4 signals)
+    # !lcdcom.Q & un10_inc09_2__n
+    # !lcdcom.Q & !un10_inc09_1__n ; (4 pterms, 4 signals)
 
-<A name=26>lcdseg2_3_.X1</A> = !<A href=#49>un18_inc09_li_0__n</A> & <A href=#50>un10_inc09_1__n</A>
-    # !un18_inc09_li_0__n & !<A href=#51>un10_inc09_2__n</A>
-    # <A href=#52>inc09_0_un4_inc09_n</A> & <A href=#53>dec2_G_142</A>
-    # un18_inc09_li_0__n & !un10_inc09_1__n & un10_inc09_2__n
-    # un10_inc09_1__n & !un10_inc09_2__n ; (5 pterms, 5 signals)
-lcdseg2_3_.X2 = <A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=28>lcdseg2_3_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A>
+    # un10_inc09_2__n & !un18_inc09_li_0__n & !un10_inc09_3__n
+       & !un10_inc09_1__n
+    # un10_inc09_2__n & un18_inc09_li_0__n & !un10_inc09_3__n
+       & un10_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg2_3_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=25>lcdseg2_4_</A> = !<A href=#36>lcdcom.Q</A> & !<A href=#49>un18_inc09_li_0__n</A> & <A href=#50>un10_inc09_1__n</A>
-    # !lcdcom.Q & !un18_inc09_li_0__n & !<A href=#51>un10_inc09_2__n</A>
-    # lcdcom.Q & un18_inc09_li_0__n
-    # lcdcom.Q & !un10_inc09_1__n & un10_inc09_2__n ; (4 pterms, 4 signals)
+<A name=27>lcdseg2_4_</A> = !<A href=#43>lcdcom.Q</A> & !<A href=#44>un10_inc09_2__n</A> & !<A href=#58>un18_inc09_li_0__n</A>
+    # !lcdcom.Q & !un18_inc09_li_0__n & <A href=#60>un10_inc09_1__n</A>
+    # lcdcom.Q & un10_inc09_2__n & !un10_inc09_1__n
+    # lcdcom.Q & un18_inc09_li_0__n ; (4 pterms, 4 signals)
 
-<A name=24>lcdseg2_5_.X1</A> = <A href=#50>un10_inc09_1__n</A> & !<A href=#51>un10_inc09_2__n</A>
-    # <A href=#49>un18_inc09_li_0__n</A> & un10_inc09_1__n & !<A href=#52>inc09_0_un4_inc09_n</A>
-    # un18_inc09_li_0__n & !un10_inc09_2__n & !inc09_0_un4_inc09_n
-    # un18_inc09_li_0__n & un10_inc09_1__n & !<A href=#53>dec2_G_142</A>
-    # un18_inc09_li_0__n & !un10_inc09_2__n & !dec2_G_142 ; (5 pterms, 5 signals)
-lcdseg2_5_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=26>lcdseg2_5_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & <A href=#60>un10_inc09_1__n</A>
+    # !un10_inc09_2__n & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+    # un18_inc09_li_0__n & !un10_inc09_3__n & un10_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg2_5_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=8>lcdseg2_6_.X1</A> = !<A href=#50>un10_inc09_1__n</A> & !<A href=#51>un10_inc09_2__n</A> & !<A href=#52>inc09_0_un4_inc09_n</A>
-    # !un10_inc09_1__n & !un10_inc09_2__n & !<A href=#53>dec2_G_142</A>
-    # <A href=#49>un18_inc09_li_0__n</A> & un10_inc09_1__n & un10_inc09_2__n ; (3 pterms, 5 signals)
-lcdseg2_6_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=9>lcdseg2_6_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & !<A href=#59>un10_inc09_3__n</A> & !<A href=#60>un10_inc09_1__n</A>
+    # un10_inc09_2__n & <A href=#58>un18_inc09_li_0__n</A> & un10_inc09_1__n ; (2 pterms, 4 signals)
+lcdseg2_6_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=35>lcdseg3_0_</A> = !<A href=#36>lcdcom.Q</A> & !<A href=#57>seg3_0_0__n</A>
-    # lcdcom.Q & seg3_0_0__n ; (2 pterms, 2 signals)
+<A name=37>lcdseg3_0_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & !<A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A>
+    # un10_inc09_2__n & un18_inc09_li_0__n & un10_inc09_3__n
+       & !un10_inc09_1__n
+    # !un10_inc09_2__n & un18_inc09_li_0__n & un10_inc09_1__n
+    # !un10_inc09_2__n & un10_inc09_3__n & un10_inc09_1__n ; (4 pterms, 4 signals)
+lcdseg3_0_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=34>lcdseg3_1_</A> = <A href=#36>lcdcom.Q</A> & !<A href=#50>un10_inc09_1__n</A> & <A href=#51>un10_inc09_2__n</A>
-    # !lcdcom.Q & un10_inc09_1__n
-    # !lcdcom.Q & !un10_inc09_2__n ; (3 pterms, 3 signals)
+<A name=36>lcdseg3_1_</A> = <A href=#43>lcdcom.Q</A> & <A href=#44>un10_inc09_2__n</A> & !<A href=#60>un10_inc09_1__n</A>
+    # !lcdcom.Q & !un10_inc09_2__n
+    # !lcdcom.Q & un10_inc09_1__n ; (3 pterms, 3 signals)
 
-<A name=33>lcdseg3_2_.X1</A> = <A href=#6>led_7_.Q</A> & <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A> & <A href=#49>un18_inc09_li_0__n</A> ; (1 pterm, 4 signals)
-lcdseg3_2_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=35>lcdseg3_2_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A> ; (1 pterm, 4 signals)
+lcdseg3_2_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=32>lcdseg3_3_.X1</A> = !<A href=#11>led_6_.Q</A> & !<A href=#49>un18_inc09_li_0__n</A> & <A href=#54>un21_inc09_i_3__n</A>
-    # !<A href=#6>led_7_.Q</A> & !un18_inc09_li_0__n & un21_inc09_i_3__n
-    # led_7_.Q & led_6_.Q & !<A href=#12>led_5_.Q</A> & un18_inc09_li_0__n & un21_inc09_i_3__n ; (3 pterms, 5 signals)
-lcdseg3_3_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=34>lcdseg3_3_.X1</A> = <A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & !<A href=#58>un18_inc09_li_0__n</A>
+    # !<A href=#44>un10_inc09_2__n</A> & !un18_inc09_li_0__n & <A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A>
+    # <A href=#14>led_5_.Q</A> & un18_inc09_li_0__n
+    # !led_6_.Q & un18_inc09_li_0__n
+    # !led_7_.Q & un18_inc09_li_0__n
+    # un10_inc09_2__n & un18_inc09_li_0__n & !un10_inc09_3__n
+       & un10_inc09_1__n ; (6 pterms, 7 signals)
+lcdseg3_3_.X2 = <A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=31>lcdseg3_4_.X1</A> = !<A href=#49>un18_inc09_li_0__n</A>
-    # <A href=#6>led_7_.Q</A> & <A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> ; (2 pterms, 4 signals)
-lcdseg3_4_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=33>lcdseg3_4_.X1</A> = !<A href=#58>un18_inc09_li_0__n</A>
+    # <A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> ; (2 pterms, 4 signals)
+lcdseg3_4_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=30>lcdseg3_5_.X1</A> = <A href=#6>led_7_.Q</A> & <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A>
-    # !<A href=#49>un18_inc09_li_0__n</A> & <A href=#50>un10_inc09_1__n</A> & <A href=#54>un21_inc09_i_3__n</A>
-    # !un18_inc09_li_0__n & !<A href=#51>un10_inc09_2__n</A> & un21_inc09_i_3__n ; (3 pterms, 7 signals)
-lcdseg3_5_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=32>lcdseg3_5_.X1</A> = !<A href=#58>un18_inc09_li_0__n</A> & <A href=#60>un10_inc09_1__n</A>
+    # <A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A>
+    # !<A href=#44>un10_inc09_2__n</A> & !un18_inc09_li_0__n & !<A href=#59>un10_inc09_3__n</A> ; (3 pterms, 7 signals)
+lcdseg3_5_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=9>lcdseg3_6_.X1</A> = !<A href=#49>un18_inc09_li_0__n</A> & !<A href=#50>un10_inc09_1__n</A> & !<A href=#51>un10_inc09_2__n</A>
-       & <A href=#54>un21_inc09_i_3__n</A>
-    # !un18_inc09_li_0__n & !un10_inc09_2__n & <A href=#52>inc09_0_un4_inc09_n</A>
-       & <A href=#53>dec2_G_142</A> & un21_inc09_i_3__n
-    # !un10_inc09_1__n & !un10_inc09_2__n & inc09_0_un4_inc09_n & dec2_G_142
-       & un21_inc09_i_3__n
-    # !un18_inc09_li_0__n & un10_inc09_1__n & un10_inc09_2__n
-       & !inc09_0_un4_inc09_n
-    # !un18_inc09_li_0__n & un10_inc09_1__n & un10_inc09_2__n & !dec2_G_142
-    # un18_inc09_li_0__n & un10_inc09_1__n & un10_inc09_2__n
-       & un21_inc09_i_3__n ; (6 pterms, 6 signals)
-lcdseg3_6_.X2 = !<A href=#36>lcdcom.Q</A> ; (1 pterm, 1 signal)
+<A name=10>lcdseg3_6_.X1</A> = !<A href=#44>un10_inc09_2__n</A> & !<A href=#58>un18_inc09_li_0__n</A> & !<A href=#59>un10_inc09_3__n</A>
+       & !<A href=#60>un10_inc09_1__n</A>
+    # !un10_inc09_2__n & !un18_inc09_li_0__n & un10_inc09_3__n
+       & un10_inc09_1__n
+    # !un10_inc09_2__n & un18_inc09_li_0__n & un10_inc09_3__n
+       & !un10_inc09_1__n
+    # un10_inc09_2__n & !un18_inc09_li_0__n & !un10_inc09_3__n
+       & un10_inc09_1__n
+    # un10_inc09_2__n & un18_inc09_li_0__n & un10_inc09_3__n & un10_inc09_1__n ; (5 pterms, 4 signals)
+lcdseg3_6_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=17>led_0_</A> = <A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=6>lcdseg4_0_.X1</A> = !<A href=#57>cnt10a_G_198</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#61>un32_inc09_3__n</A>
+       & !<A href=#62>un32_inc09_1__n</A>
+    # cnt10a_G_198 & !un18_inc09_li_0__n & !un32_inc09_3__n & !un32_inc09_1__n ; (2 pterms, 4 signals)
+lcdseg4_0_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=16>led_1_</A> = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=42>lcdseg4_1_.X1</A> = <A href=#57>cnt10a_G_198</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#62>un32_inc09_1__n</A>
+    # cnt10a_G_198 & <A href=#61>un32_inc09_3__n</A> & !un32_inc09_1__n
+    # cnt10a_G_198 & !un18_inc09_li_0__n & un32_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg4_1_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=15>led_2_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> & <A href=#45>slow_clk_7_.Q</A>
-       & <A href=#46>slow_clk_8_.Q</A> & <A href=#47>slow_clk_9_.Q</A> & <A href=#48>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
-led_2_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-led_2_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=41>lcdseg4_2_.X1</A> = !<A href=#57>cnt10a_G_198</A> & !<A href=#58>un18_inc09_li_0__n</A> & <A href=#62>un32_inc09_1__n</A>
+    # cnt10a_G_198 & <A href=#61>un32_inc09_3__n</A> ; (2 pterms, 4 signals)
+lcdseg4_2_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=14>led_3_</A> = !<A href=#56>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+<A name=40>lcdseg4_3_.X1</A> = !<A href=#57>cnt10a_G_198</A> & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#61>un32_inc09_3__n</A>
+       & !<A href=#62>un32_inc09_1__n</A>
+    # cnt10a_G_198 & !un18_inc09_li_0__n & !un32_inc09_3__n & !un32_inc09_1__n
+    # cnt10a_G_198 & un18_inc09_li_0__n & !un32_inc09_3__n & un32_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg4_3_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=13>led_4_.D</A> = !<A href=#13>led_4_.Q</A> ; (1 pterm, 1 signal)
-led_4_.C = <A href=#56>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
-led_4_.AP = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=39>lcdseg4_4_.X1</A> = !<A href=#57>cnt10a_G_198</A> & <A href=#58>un18_inc09_li_0__n</A>
+    # un18_inc09_li_0__n & !<A href=#61>un32_inc09_3__n</A>
+    # cnt10a_G_198 & !un32_inc09_3__n & !<A href=#62>un32_inc09_1__n</A> ; (3 pterms, 4 signals)
+lcdseg4_4_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
 
-<A name=12>led_5_.D</A> = !<A href=#6>led_7_.Q</A> & <A href=#11>led_6_.Q</A> & <A href=#12>led_5_.Q</A>
-    # !led_5_.Q & !<A href=#13>led_4_.Q</A>
+<A name=38>lcdseg4_5_.X1</A> = !<A href=#57>cnt10a_G_198</A> & <A href=#62>un32_inc09_1__n</A>
+    # !cnt10a_G_198 & <A href=#58>un18_inc09_li_0__n</A> & !<A href=#61>un32_inc09_3__n</A>
+    # un18_inc09_li_0__n & !un32_inc09_3__n & un32_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg4_5_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
+
+<A name=11>lcdseg4_6_.X1</A> = !<A href=#57>cnt10a_G_198</A> & !<A href=#61>un32_inc09_3__n</A> & !<A href=#62>un32_inc09_1__n</A>
+    # cnt10a_G_198 & un32_inc09_3__n
+    # cnt10a_G_198 & <A href=#58>un18_inc09_li_0__n</A> & un32_inc09_1__n ; (3 pterms, 4 signals)
+lcdseg4_6_.X2 = !<A href=#43>lcdcom.Q</A> ; (1 pterm, 1 signal)
+
+<A name=19>led_0_</A> = <A href=#12>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=18>led_1_</A> = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=17>led_2_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> & <A href=#53>slow_clk_7_.Q</A>
+       & <A href=#54>slow_clk_8_.Q</A> & <A href=#55>slow_clk_9_.Q</A> & <A href=#56>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
+led_2_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+led_2_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=16>led_3_</A> = !<A href=#64>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+
+<A name=15>led_4_.D</A> = !<A href=#15>led_4_.Q</A> ; (1 pterm, 1 signal)
+led_4_.C = <A href=#64>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_4_.AP = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
+
+<A name=14>led_5_.D</A> = !<A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & <A href=#14>led_5_.Q</A>
+    # !led_5_.Q & !<A href=#15>led_4_.Q</A>
     # led_5_.Q & led_4_.Q ; (3 pterms, 4 signals)
-led_5_.C = <A href=#56>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
-led_5_.AP = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+led_5_.C = <A href=#64>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_5_.AP = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=11>led_6_.D</A> = !<A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A>
+<A name=13>led_6_.D</A> = !<A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
     # led_6_.Q & led_5_.Q
     # led_6_.Q & led_4_.Q ; (3 pterms, 3 signals)
-led_6_.C = <A href=#56>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
-led_6_.AP = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+led_6_.C = <A href=#64>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_6_.AP = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=6>led_7_.D</A> = !( <A href=#6>led_7_.Q</A> & !<A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A>
+<A name=7>led_7_.D</A> = !( <A href=#7>led_7_.Q</A> & !<A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
     # !led_7_.Q & led_6_.Q & !led_5_.Q
     # !led_7_.Q & !led_6_.Q & led_5_.Q
     # !led_7_.Q & led_4_.Q ) ; (4 pterms, 4 signals)
-led_7_.C = <A href=#56>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
-led_7_.AP = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+led_7_.C = <A href=#64>slow_clk_11_reg.Q</A> ; (1 pterm, 1 signal)
+led_7_.AP = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=57>seg3_0_0__n</A> = <A href=#50>un10_inc09_1__n</A> & !<A href=#51>un10_inc09_2__n</A> & <A href=#52>inc09_0_un4_inc09_n</A>
-       & <A href=#53>dec2_G_142</A> & <A href=#54>un21_inc09_i_3__n</A>
-    # <A href=#49>un18_inc09_li_0__n</A> & !un10_inc09_1__n & un10_inc09_2__n
-       & inc09_0_un4_inc09_n & dec2_G_142 & un21_inc09_i_3__n
-    # un18_inc09_li_0__n & un10_inc09_1__n & !un10_inc09_2__n
-       & un21_inc09_i_3__n
-    # !un18_inc09_li_0__n & !un10_inc09_1__n & !un10_inc09_2__n
-       & un21_inc09_i_3__n ; (4 pterms, 6 signals)
+<A name=47>slow_clk_0_.D</A> = !<A href=#47>slow_clk_0_.Q</A> ; (1 pterm, 1 signal)
+slow_clk_0_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_0_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=39>slow_clk_0_.D</A> = !<A href=#39>slow_clk_0_.Q</A> ; (1 pterm, 1 signal)
-slow_clk_0_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_0_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=56>slow_clk_10_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> & <A href=#53>slow_clk_7_.Q</A>
+       & <A href=#54>slow_clk_8_.Q</A> & <A href=#55>slow_clk_9_.Q</A> ; (1 pterm, 10 signals)
+slow_clk_10_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_10_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=48>slow_clk_10_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> & <A href=#45>slow_clk_7_.Q</A>
-       & <A href=#46>slow_clk_8_.Q</A> & <A href=#47>slow_clk_9_.Q</A> ; (1 pterm, 10 signals)
-slow_clk_10_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_10_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=64>slow_clk_11_reg.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> & <A href=#53>slow_clk_7_.Q</A>
+       & <A href=#54>slow_clk_8_.Q</A> & <A href=#55>slow_clk_9_.Q</A> & <A href=#56>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
+slow_clk_11_reg.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_11_reg.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=56>slow_clk_11_reg.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> & <A href=#45>slow_clk_7_.Q</A>
-       & <A href=#46>slow_clk_8_.Q</A> & <A href=#47>slow_clk_9_.Q</A> & <A href=#48>slow_clk_10_.Q</A> ; (1 pterm, 11 signals)
-slow_clk_11_reg.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_11_reg.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
-
-<A name=40>slow_clk_1_.D</A> = <A href=#39>slow_clk_0_.Q</A> & !<A href=#40>slow_clk_1_.Q</A>
+<A name=48>slow_clk_1_.D</A> = <A href=#47>slow_clk_0_.Q</A> & !<A href=#48>slow_clk_1_.Q</A>
     # !slow_clk_0_.Q & slow_clk_1_.Q ; (2 pterms, 2 signals)
-slow_clk_1_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_1_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+slow_clk_1_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_1_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=41>slow_clk_2_.D</A> = <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & !<A href=#41>slow_clk_2_.Q</A>
+<A name=49>slow_clk_2_.D</A> = <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & !<A href=#49>slow_clk_2_.Q</A>
     # !slow_clk_1_.Q & slow_clk_2_.Q
     # !slow_clk_0_.Q & slow_clk_2_.Q ; (3 pterms, 3 signals)
-slow_clk_2_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_2_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+slow_clk_2_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_2_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=42>slow_clk_3_.D</A> = <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A> & !<A href=#42>slow_clk_3_.Q</A>
+<A name=50>slow_clk_3_.D</A> = <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A> & !<A href=#50>slow_clk_3_.Q</A>
     # !slow_clk_2_.Q & slow_clk_3_.Q
     # !slow_clk_1_.Q & slow_clk_3_.Q
     # !slow_clk_0_.Q & slow_clk_3_.Q ; (4 pterms, 4 signals)
-slow_clk_3_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_3_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+slow_clk_3_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_3_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=43>slow_clk_4_.D.X1</A> = <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> ; (1 pterm, 4 signals)
-slow_clk_4_.D.X2 = <A href=#43>slow_clk_4_.Q</A> ; (1 pterm, 1 signal)
-slow_clk_4_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_4_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=51>slow_clk_4_.D.X1</A> = <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> ; (1 pterm, 4 signals)
+slow_clk_4_.D.X2 = <A href=#51>slow_clk_4_.Q</A> ; (1 pterm, 1 signal)
+slow_clk_4_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_4_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=44>slow_clk_6_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> ; (1 pterm, 6 signals)
-slow_clk_6_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_6_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=52>slow_clk_6_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> ; (1 pterm, 6 signals)
+slow_clk_6_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_6_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=45>slow_clk_7_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> ; (1 pterm, 7 signals)
-slow_clk_7_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_7_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=53>slow_clk_7_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> ; (1 pterm, 7 signals)
+slow_clk_7_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_7_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=46>slow_clk_8_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> & <A href=#45>slow_clk_7_.Q</A> ; (1 pterm, 8 signals)
-slow_clk_8_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_8_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=54>slow_clk_8_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> & <A href=#53>slow_clk_7_.Q</A> ; (1 pterm, 8 signals)
+slow_clk_8_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_8_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=47>slow_clk_9_.T</A> = <A href=#36>lcdcom.Q</A> & <A href=#39>slow_clk_0_.Q</A> & <A href=#40>slow_clk_1_.Q</A> & <A href=#41>slow_clk_2_.Q</A>
-       & <A href=#42>slow_clk_3_.Q</A> & <A href=#43>slow_clk_4_.Q</A> & <A href=#44>slow_clk_6_.Q</A> & <A href=#45>slow_clk_7_.Q</A>
-       & <A href=#46>slow_clk_8_.Q</A> ; (1 pterm, 9 signals)
-slow_clk_9_.C = <A href=#38>osc_sclk</A> ; (1 pterm, 1 signal)
-slow_clk_9_.AR = !<A href=#10>nrst</A> ; (1 pterm, 1 signal)
+<A name=55>slow_clk_9_.T</A> = <A href=#43>lcdcom.Q</A> & <A href=#47>slow_clk_0_.Q</A> & <A href=#48>slow_clk_1_.Q</A> & <A href=#49>slow_clk_2_.Q</A>
+       & <A href=#50>slow_clk_3_.Q</A> & <A href=#51>slow_clk_4_.Q</A> & <A href=#52>slow_clk_6_.Q</A> & <A href=#53>slow_clk_7_.Q</A>
+       & <A href=#54>slow_clk_8_.Q</A> ; (1 pterm, 9 signals)
+slow_clk_9_.C = <A href=#46>osc_sclk</A> ; (1 pterm, 1 signal)
+slow_clk_9_.AR = !<A href=#12>nrst</A> ; (1 pterm, 1 signal)
 
-<A name=50>un10_inc09_1__n</A> = <A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A> & <A href=#52>inc09_0_un4_inc09_n</A>
-    # !led_5_.Q & led_4_.Q & inc09_0_un4_inc09_n ; (2 pterms, 3 signals)
+<A name=60>un10_inc09_1__n</A> = <A href=#7>led_7_.Q</A> & <A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
+    # led_7_.Q & !led_5_.Q & led_4_.Q ; (2 pterms, 3 signals)
 
-<A name=51>un10_inc09_2__n</A> = <A href=#11>led_6_.Q</A> & !<A href=#12>led_5_.Q</A> & !<A href=#13>led_4_.Q</A> & <A href=#52>inc09_0_un4_inc09_n</A>
-    # !led_6_.Q & led_5_.Q & inc09_0_un4_inc09_n
-    # !led_6_.Q & led_4_.Q & inc09_0_un4_inc09_n ; (3 pterms, 4 signals)
+<A name=44>un10_inc09_2__n</A> = <A href=#7>led_7_.Q</A> & <A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
+    # led_7_.Q & !led_6_.Q & led_5_.Q
+    # led_7_.Q & !led_6_.Q & led_4_.Q ; (3 pterms, 4 signals)
 
-<A name=49>un18_inc09_li_0__n</A> = <A href=#13>led_4_.Q</A> & <A href=#55>N_120_i</A> ; (1 pterm, 2 signals)
+<A name=59>un10_inc09_3__n</A> = <A href=#7>led_7_.Q</A> & !<A href=#13>led_6_.Q</A> & !<A href=#14>led_5_.Q</A> & !<A href=#15>led_4_.Q</A>
+    # !led_7_.Q & led_6_.Q & led_5_.Q & led_4_.Q ; (2 pterms, 4 signals)
 
-<A name=54>un21_inc09_i_3__n</A> = !( !<A href=#49>un18_inc09_li_0__n</A> & !<A href=#50>un10_inc09_1__n</A>
-       & <A href=#52>inc09_0_un4_inc09_n</A> & <A href=#53>dec2_G_142</A>
-    # un18_inc09_li_0__n & un10_inc09_1__n & <A href=#51>un10_inc09_2__n</A>
-       & !inc09_0_un4_inc09_n
-    # un18_inc09_li_0__n & un10_inc09_1__n & un10_inc09_2__n & !dec2_G_142 ) ; (3 pterms, 5 signals)
+<A name=58>un18_inc09_li_0__n</A> = <A href=#15>led_4_.Q</A> & <A href=#63>N_163_i</A> ; (1 pterm, 2 signals)
+
+<A name=62>un32_inc09_1__n</A> = <A href=#44>un10_inc09_2__n</A> & !<A href=#58>un18_inc09_li_0__n</A> & !<A href=#60>un10_inc09_1__n</A>
+    # !un18_inc09_li_0__n & <A href=#59>un10_inc09_3__n</A> & un10_inc09_1__n
+    # !un10_inc09_3__n & !un10_inc09_1__n ; (3 pterms, 4 signals)
+
+<A name=61>un32_inc09_3__n</A> = <A href=#44>un10_inc09_2__n</A> & !<A href=#59>un10_inc09_3__n</A> & <A href=#60>un10_inc09_1__n</A> ; (1 pterm, 3 signals)
 
 <BR>
 <BR>

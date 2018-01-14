@@ -1,7 +1,7 @@
  ispLEVER Classic 2.0.00.17.20.15 Fitter Report File 
 Project Name,bb_lcd
 Project Path,C:\projects\ispMach-LCD\project
-Project Fitted on,Sun Jan 14 09:40:18 2018
+Project Fitted on,Sun Jan 14 09:59:34 2018
 
 Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name,PG
 1,GND,-,,,,,,
@@ -35,18 +35,18 @@ Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name,PG
 29,I_O,0,F4,*,LVCMOS18,Output,lcdseg3_4_,
 30,I_O,0,F6,*,LVCMOS18,Output,lcdseg3_5_,
 31,I_O,0,F8,*,LVCMOS18,Output,lcdseg3_6_,
-32,I_O,0,F10,,,,,
-33,I_O,0,F12,,,,,
+32,I_O,0,F10,*,LVCMOS18,Output,lcdseg4_0_,
+33,I_O,0,F12,*,LVCMOS18,Output,lcdseg4_1_,
 34,VCCIO0,-,,,,,,
 35,TCK,-,,,,,,
 36,VCC,-,,,,,,
 37,GND,-,,,,,,
 38,IN2,0,,,,,,
-39,I_O,0,G12,,,,,
-40,I_O,0,G10,,,,,
-41,I_O,0,G8,,,,,
-42,I_O,0,G6,,,,,
-43,I_O,0,G4,,,,,
+39,I_O,0,G12,*,LVCMOS18,Output,lcdseg4_2_,
+40,I_O,0,G10,*,LVCMOS18,Output,lcdseg4_3_,
+41,I_O,0,G8,*,LVCMOS18,Output,lcdseg4_4_,
+42,I_O,0,G6,*,LVCMOS18,Output,lcdseg4_5_,
+43,I_O,0,G4,*,LVCMOS18,Output,lcdseg4_6_,
 44,I_O,0,G2,,,,,
 45,IN3,0,,,,,,
 46,GNDIO0,-,,,,,,
