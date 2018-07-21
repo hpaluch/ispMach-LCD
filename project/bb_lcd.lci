@@ -12,8 +12,8 @@ EN_PinMacrocell = yes;
 
 [Revision]
 Parent = lc4k256e.lci;
-DATE = 01/14/2018;
-TIME = 09:59:10;
+DATE = 07/21/2018;
+TIME = 17:56:23;
 Source_Format = Pure_Verilog_HDL;
 Synthesis = Synplify;
 
@@ -89,7 +89,7 @@ NetList = VERILOG;
 
 [IO Types]
 layer = OFF;
-nrst = -, PIN, 1, -;
+nrst = LVCMOS33, PIN, 1, -;
 led_0_ = -, PIN, 1, -;
 led_1_ = -, PIN, 1, -;
 led_2_ = -, PIN, 1, -;

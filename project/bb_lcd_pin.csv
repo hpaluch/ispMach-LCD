@@ -1,7 +1,7 @@
  ispLEVER Classic 2.0.00.17.20.15 Fitter Report File 
 Project Name,bb_lcd
 Project Path,C:\projects\ispMach-LCD\project
-Project Fitted on,Sun Jan 14 09:59:34 2018
+Project Fitted on,Sat Jul 21 17:56:33 2018
 
 Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name,PG
 1,GND,-,,,,,,
@@ -75,7 +75,7 @@ Pin,Pin_Type,Bank,GLB_Pad,Assigned,I/O_Type,Signal_Type,Signal_Name,PG
 69,I_O,1,J8,,,,,
 70,I_O,1,J10,*,LVCMOS18,Output,led_1_,
 71,I_O,1,J12,*,LVCMOS18,Output,led_0_,
-72,IN4,0,,*,LVCMOS18,Input,nrst,
+72,IN4,0,,*,LVCMOS33,Input,nrst,
 73,GND,-,,,,,,
 74,TMS,-,,,,,,
 75,VCCIO1,-,,,,,,
